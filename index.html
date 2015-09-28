@@ -1,21 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>
-   Sam's PWP 
-    </title>
-</head>
-<body>
-    <h1>
-Welcome to my Personal Web Page (PWP)
-    </h1>
-    <p>
-This is my PWP, or Personal Web Page. Thanks for stopping by! Here are some refreshments:
-<img src="https://media1.giphy.com/media/oxqgyeOYXVks/200_s.gif">. Milk and cookies (M&C). Oooh, boy, is it hot outside. Aren't you glad we are here? I love M&C... on my PWP....
-    </p>
-    
-</body>
-</html>
+---
+title: debris in the blogosphere
+---
 
+These are the beginnings of a website. 
 
+<div id="blog">
+    <div class="vertical-section">
+
+        <h3>Research</h3>
+  <ul>
+    {% for researchpost in site.research reversed %}
+      <li><span>{{ researchpost.date | date_to_string }}</span> <a href="{{ researchpost.url }}">{{ researchpost.title }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+
+    <div class="vertical-section">
+  <h3>Projects</h3>
+  <ul>
+    {% for project in site.projects reversed %}
+    <li><span>{{ project.date | date_to_string }}</span> <a href="{{ project.url }}">{{ project.title }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+    <div class="vertical-section">
+{% if site.bugposts != empty %}
+  <h3><a href="/html/bug-manifesto/index.html">Entomology</a></h3>
+  <ul>
+      {% for bugpost in site.bugposts reversed %}
+      <li><span>{{ bugpost.date | date_to_string }}</span> <a href="{{ bugpost.url }}">{{ bugpost.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+</div>
+<div>
+<a href="/html/books/index.html">recently read books</a>
+</div>
+<div>
+<a href="/html/about/index.html">about me</a>
+</div>

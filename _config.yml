@@ -1,0 +1,13 @@
+markdown: rdiscount
+permalink: pretty 
+highlighter: pygments
+collections:
+    bugposts:
+        layout: page
+        output: true
+    projects:
+        layout: page
+        output: true
+    research:
+        layout: page
+        output: true
