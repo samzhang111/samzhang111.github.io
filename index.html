@@ -25,8 +25,9 @@ These are the beginnings of a website.
 </div>
     <div class="vertical-section">
 {% if site.bugposts != empty %}
-  <h3><a href="/html/bug-manifesto/index.html">Entomology</a></h3>
+  <h3>Bugs</h3>
   <ul>
+      <li><a href="/html/bug-manifesto/index.html">why write about bugs</a></li>
       {% for bugpost in site.bugposts reversed %}
       <li><span>{{ bugpost.date | date_to_string }}</span> <a href="{{ bugpost.url }}">{{ bugpost.title }}</a></li>
     {% endfor %}
