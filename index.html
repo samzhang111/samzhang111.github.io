@@ -7,7 +7,7 @@ These are the beginnings of a website.
 <div id="blog">
     <div class="vertical-section">
 
-        <h3>Research</h3>
+        <h3>Psychology</h3>
   <ul>
     {% for researchpost in site.research reversed %}
       <li><span>{{ researchpost.date | date_to_string }}</span> <a href="{{ researchpost.url }}">{{ researchpost.title }}</a></li>
@@ -25,7 +25,7 @@ These are the beginnings of a website.
 </div>
     <div class="vertical-section">
 {% if site.bugposts != empty %}
-  <h3>Bugs</h3>
+  <h3>Everyday bugs</h3>
   <ul>
       <li><a href="/html/bug-manifesto/index.html">why write about bugs</a></li>
       {% for bugpost in site.bugposts reversed %}
