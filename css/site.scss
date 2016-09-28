@@ -1,0 +1,26 @@
+---
+---
+
+.site {
+    text-align: justify;
+    width: 42em;
+    margin: 3em auto 2em 3em;
+    h1 {
+        font-size: 100%;
+    }
+
+    li, ul {
+        list-style-type: none;
+    }
+}
+
+.post {
+    .title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .postdate {
+        font-weight: bold;
+    }
+}
