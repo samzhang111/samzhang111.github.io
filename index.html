@@ -4,9 +4,9 @@ layout: default
 
 <div id="blog">
     <div class="vertical-section">
-        <h3>Books I've been reading...</h3>
+        <h3>Thoughts on things</h3>
         <ul>
-            {% for post in site.books reversed %}
+            {% for post in site.thoughts reversed %}
             <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
