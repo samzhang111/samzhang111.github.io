@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I am from Salinas, where the women go forever
-date: 2016-10-09 21:47:00
+date: 2016-10-09 23:47:00
 ---
 
 I've been starting a new job in California the last two weeks, and around all of the travel and working that I'm doing, the thought of "music" just sort of slipped my mind. I didn't bring a guitar and this room doesn't have one, and I was distracted enough that I went a few days without it. Music from stores doesn't count -- that music makes you feel dehydrated and itchy -- I'm talking about music that nourishes you. It's an interesting how not listening to music for a few days
