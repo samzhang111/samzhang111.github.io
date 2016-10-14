@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: pretty 
-highlighter: pygments
+highlighter: rouge
 collections:
     thoughts:
         layout: page
