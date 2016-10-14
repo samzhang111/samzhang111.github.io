@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I am from Salinas, where the women go forever
-date: 2016-10-09 23:47:00
+date: 2016-10-14 23:47:00
 ---
 
 I've been starting a new job in California the last two weeks, and around all of the travel and working that I'm doing, the thought of "music" just sort of slipped my mind. I didn't bring a guitar and this room doesn't have one, and I was distracted enough that I went a few days without it. Music from stores doesn't count -- that music makes you feel dehydrated and itchy -- I'm talking about music that nourishes you. It's an interesting how not listening to music for a few days
@@ -21,6 +21,8 @@ asleep. A hotel for a night is fine, and even a week is ok, it's just the premis
 
 To lull myself to sleep, I started placing my laptop near me and listening to a song or two before placing it on the floor and sleeping. This grew to the point where I slept with the laptop on the bed, falling asleep by [Little Love Caster](https://www.youtube.com/watch?v=jGSw5u7Qndk) and it played through half of Laura Marling's ouvre before I woke up. I really liked the songs I woke up to, which is how I started listening to _A Creature I Don't Know_.
 
-Two nights ago, I tossed and turned all night. It was one of those nights where when I got up to use the bathroom, I went abruptly, as if I wanted to burn out the last of my hastiness. It's kind of hilarious in retrospect, bolting out of bed and rigidly walking to the bathroom, but I think it reflects a kind of perfectionism borne out of work. At work, I'm someone who prides myself for being a fast coder and having honed my habits into reflexes. Taken too far, what could I be more practiced at than peeing at night?
+Two nights ago, I tossed and turned all night. It was one of those nights where when I got up to use the bathroom, I went abruptly, as if I wanted to burn out the last of my hastiness. It's kind of hilarious in retrospect, bolting out of bed at 2AM and rigidly walking to the bathroom, but I think it reflects a kind of perfectionism borne out of work. At work, I've let myself become too proud of myself for being a fast coder and for honing my habits into reflexes. This kind of professional reflex, kind of the same perspective that superspy movies (e.g., the Bourne series) encourage viewers to relate to, is one of mega-competance in all actions. Obviously workers are much better at the work they do than things they haven't had the time to do, so I think this attitude encourages people to become more attached to their work. Taken to its extreme, too, what could I be more practiced at than peeing? I can do it so fast if I want to!
 
 Lately I've been having trouble with rambling too much in stories, and finding myself almost lost or something, far from where I started. I'm very happy that I've managed to surround myself with people who forgive me enough to stay with me anyway.
+
+Anyway, I couldn't sleep afterwards either, and I listened to _The Worst Things Get, The Harder I Fight, The Harder I Fight, The More I Love You_ all the way through. I forgot I wanted to fall asleep as soon as I realized that listening to music early in the morning amplifies its hold on you. I heard the music so much more clearly. So I finished the album. And then I closed my laptop, put it on the floor, and slept.
