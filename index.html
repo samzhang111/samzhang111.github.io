@@ -11,15 +11,6 @@ layout: default
             {% endfor %}
         </ul>
     </div>
-    <div class="vertical-section">
-
-        <h3>Psychology</h3>
-        <ul>
-            {% for researchpost in site.research reversed %}
-            <li><span>{{ researchpost.date | date_to_string }}</span> <a href="{{ researchpost.url }}">{{ researchpost.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
 
     <div class="vertical-section">
         <h3>Projects</h3>
@@ -30,6 +21,15 @@ layout: default
         </ul>
     </div>
 
+    <div class="vertical-section">
+
+        <h3>Psychology</h3>
+        <ul>
+            {% for researchpost in site.research reversed %}
+            <li><span>{{ researchpost.date | date_to_string }}</span> <a href="{{ researchpost.url }}">{{ researchpost.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 
     <div>
         <a href="/html/about/index.html">about me</a>
