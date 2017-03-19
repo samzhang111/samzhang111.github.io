@@ -1,11 +1,18 @@
 ---
 ---
 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+html {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    color: #333;
+}
+
 .site {
     text-align: justify;
     width: 42em;
-    margin: 3em auto 2em 3em;
-    font-color: #333;
+    margin: 3em auto;
     h1 {
         font-size: 100%;
     }
