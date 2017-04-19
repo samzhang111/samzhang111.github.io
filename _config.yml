@@ -1,3 +1,5 @@
+gems:
+  - jekyll-feed
 markdown: rdiscount
 permalink: pretty 
 highlighter: rouge
