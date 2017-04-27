@@ -1,6 +1,4 @@
-gems:
-  - jekyll-feed
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty 
 highlighter: rouge
 collections:
@@ -13,3 +11,8 @@ collections:
     research:
         layout: page
         output: true
+kramdown:
+    input: GFM
+    hard_wrap: false
+gems:
+  - jekyll-feed
