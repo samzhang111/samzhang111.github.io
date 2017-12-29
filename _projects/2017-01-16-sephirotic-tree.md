@@ -1,6 +1,6 @@
 ---
 layout: post
-title: word2vec Kabbalistic tree of life
+title: A word vector Kabbalistic tree of life
 date: 2017-01-16 21:05:00
 ---
 

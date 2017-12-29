@@ -8,12 +8,12 @@ Thanks to the encouragement of [Jeremy Singer-Vine](https://www.jsvine.com/), I'
 
 Here are some more fun details about the data:
 
-# 1. Only 64% of the papers contributed frontpages for more than half the days of the scrape
+### 1. Only 64% of the papers contributed frontpages for more than half the days of the scrape
 The collection from the Newseum includes a decent amount of weekly or otherwise not daily papers. 
 
 <img src="/images/paper-dists.png?raw=true" alt="Histogram of number of days each paper has records in scrape" width="100%" />
 
-# 2. Newspapers have patterns with how they present their frontpages
+### 2. Newspapers have patterns with how they present their frontpages
 
 One thing we noticed as we collected the front pages is that the difference between newspapers was huge. Tabloids tend to use dramatic, full-paged fonts, whereas the Wall Street Journal was so consistent with its headline font choice that after the four largest stories, the next 115 daily headlines all used the same font size (67.36pt Escrow Condensed Bold).
 
@@ -21,7 +21,7 @@ One thing we noticed as we collected the front pages is that the difference betw
 
 Notice how the interquartile range for the WSJ is so condensed that it is essentially that single font size. Whereas the New York Daily News (NY\_DN on the far right of the graph) and the Chicago Sun-Times (IL\_CST) are generous (and less standardized) with the space they devote to the splash.
 
-# 3. Tabloids use bigger fonts than broadsheets
+### 3. Tabloids use bigger fonts than broadsheets
 
 So does it turn out that tabloids tend to use bigger fonts than broadsheets?
 

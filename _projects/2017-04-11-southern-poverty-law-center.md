@@ -1,6 +1,6 @@
 ---
 layout: post
-title: deep diving into far-right forums
+title: Deep diving into far-right forums
 date: 2017-04-11 09:26:00
 ---
 

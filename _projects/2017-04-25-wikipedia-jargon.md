@@ -1,6 +1,6 @@
 ---
 layout: post
-title: comparing wikipedia and simple wikipedia
+title: Identifying jargon from wikipedia
 date: 2017-04-25 21:15:00
 ---
 
