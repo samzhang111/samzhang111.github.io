@@ -9,15 +9,13 @@ Thanks to the encouragement of [Jeremy Singer-Vine](https://www.jsvine.com/), I'
 Here are some more fun details about the data:
 
 # 1. Only 64% of the papers contributed frontpages for more than half the days of the scrape
-The collection from the Newseum includes a decent amount of weekly or otherwise not daily papers. Here is a plot of their distributions:
+The collection from the Newseum includes a decent amount of weekly or otherwise not daily papers. 
 
 <img src="/images/paper-dists.png?raw=true" alt="Histogram of number of days each paper has records in scrape" width="100%" />
 
 # 2. Newspapers have patterns with how they present their frontpages
 
 One thing we noticed as we collected the front pages is that the difference between newspapers was huge. Tabloids tend to use dramatic, full-paged fonts, whereas the Wall Street Journal was so consistent with its headline font choice that after the four largest stories, the next 115 daily headlines all used the same font size (67.36pt Escrow Condensed Bold).
-
-You can see that sense of spread in this graph:
 
 <img src="/images/paper-fonts.png?raw=true" alt="Boxplot of font sizes by each paper" width="140%" />
 
