@@ -4,6 +4,15 @@ layout: home
 
 <div id="blog">
     <div class="vertical-section">
+        <h3>Projects</h3>
+        <ul>
+            {% for project in site.projects reversed %}
+            <li><span>{{ project.date | date_to_string }}</span> <a href="{{ project.url }}">{{ project.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="vertical-section">
         <h3>Posts</h3>
         <ul>
             {% for post in site.thoughts reversed %}
@@ -12,14 +21,6 @@ layout: home
         </ul>
     </div>
 
-    <div class="vertical-section">
-        <h3>Projects</h3>
-        <ul>
-            {% for project in site.projects reversed %}
-            <li><span>{{ project.date | date_to_string }}</span> <a href="{{ project.url }}">{{ project.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
 
     <div class="vertical-section">
 
