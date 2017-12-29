@@ -2,6 +2,7 @@
 layout: post
 title: Weapons of Math Destruction
 date: 2016-10-04 22:14:00
+tag: books
 ---
 
 Cathy O'Neil of [mathbabe.org](https://mathbabe.org/) released a book recently called [Weapons of Math Destruction](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815).

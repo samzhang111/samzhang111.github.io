@@ -2,6 +2,7 @@
 layout: post
 title: Identifying jargon from wikipedia
 date: 2017-04-25 21:15:00
+tag: project
 ---
 
 

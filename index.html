@@ -3,21 +3,25 @@ layout: home
 ---
 
 <div id="blog">
-    <h1>Sam Zhang (<a href="/html/about/index.html">about me</a>)</h1>
-    <div class="vertical-section">
-        <h3>Projects</h3>
-        <ul>
-            {% for project in site.projects reversed %}
-            <li><span>{{ project.date | date_to_string }}</span> <a href="{{ project.url }}">{{ project.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
+	<h2>About me</h2>
+	<div content>
 
-    <div class="vertical-section">
-        <h3>Posts</h3>
+	    Sam Zhang is a software engineer living in Boulder, Colorado, working at <a href="https://opencounter.com">OpenCounter</a>. 
+	    
+	    <p>
+	    
+	    Currently I'm not looking for contracting work, consulting work, or a new job. But you can still look through my <a href="https://github.com/samzhang111">Github</a>, <a href="https://registry.jsonresume.org/szhang">resume</a>, or <a href="/html/about/index.html">mini-bio</a>.
+
+	</div>
+
+    <div class="vertical-section"><h2>Posts<a aria-hidden="true" href="/html/x/index.html">:</a></h2>
         <ul>
-            {% for post in site.thoughts reversed %}
-            <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% for post in site.posts %}
+	    <li class="row">
+		    <span class="date">{{ post.date | date_to_string }}</span>
+		    <span class="tag">[{{ post.tag }}]</span>
+		    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
             {% endfor %}
         </ul>
     </div>

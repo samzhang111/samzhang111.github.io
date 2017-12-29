@@ -2,6 +2,7 @@
 layout: post
 title: Hillary Clinton's Shattered reads like Kazuo Ishiguro
 date: 2017-09-21 22:41:00
+tag: books
 ---
 
 After reading several of Ishiguro's novels, I feel fairly confident in saying that they often feature a narrator who is intensely self-aware and insecure about certain aspects of their social status, yet manage to convince themeselves so utterly that they are integrated into "high society" or whatever their desired company is that it opens up this psychological space for these beautiful magical realist effects to appear. At times I am reminded of a phrase I read in reference to Mo Yan: "hallucinatory realism". There is no solid reality with which to perform magic on. Instead, the narrator's world is revealed to have taken a fundamental misstep, somewhere up the line, like mathematicians who ventured far along before doubt is cast on one of their fundamental axioms. But where did things go wrong? The world around Ishiguro's characters -- colonial Shanghai in When We Were Orphans, the book I read most recently -- transforms so impercetably that it boils them, and the reader, like a frog in a pot. There is no clear point of departure from the world they knew.

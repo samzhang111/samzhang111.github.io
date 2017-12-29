@@ -2,6 +2,7 @@
 layout: post
 title: Math/CS books I read in 2017
 date: 2017-12-29 13:00:00
+tag: books
 ---
 
 Since I made [this post](2017-03-17-programming-books.md) for programming books I read last year, another year has passed. I've expanded this year's title to be "Math/CS" books, since I think I read more math books than programming ones this year. This is meant to be a fun recap (for me), and perhaps a helpful introduction to good books, if you, like me, are a "book learner".

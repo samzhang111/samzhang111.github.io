@@ -1,7 +1,8 @@
 ---
 layout: post
-title: The largest headlines for latter 2017
+title: The "largest" newspaper headlines for latter 2017
 date: 2017-12-28 20:30:00
+tag: project
 ---
 
 Thanks to the encouragement of [Jeremy Singer-Vine](https://www.jsvine.com/), I've published a [brief article on Buzzfeed](https://www.buzzfeed.com/samzhang/the-biggest-headlines-of-late-2017-literally) summarizing the "largest" headlines (based on font size) for ten major newspapers over a last half year of [daily scraping](https://github.com/samzhang111/frontpages).

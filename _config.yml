@@ -2,10 +2,7 @@ markdown: kramdown
 permalink: pretty 
 highlighter: rouge
 collections:
-    thoughts:
-        layout: page
-        output: true
-    projects:
+    posts:
         layout: page
         output: true
 kramdown:

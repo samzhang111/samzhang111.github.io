@@ -1,7 +1,8 @@
 ---
 layout: post
-title: A quick summary of programming books I read in 2016
+title: Programming books I read in 2016
 date: 2017-03-16 09:19:00
+tag: books
 ---
 
 # [The Success of Open Source](http://www.amazon.com/Success-Open-Source-Steven-Weber/dp/0674018583)

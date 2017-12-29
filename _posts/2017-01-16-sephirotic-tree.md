@@ -2,6 +2,7 @@
 layout: post
 title: A word vector Kabbalistic tree of life
 date: 2017-01-16 21:05:00
+tag: project
 ---
 
 In the first chapter of [Visual Complexity: Mapping Patterns of Information](https://www.amazon.com/Visual-Complexity-Mapping-Patterns-Information/dp/1568989369), Manuel Lima explores  the symbolism of the "tree" across history and mythologies. One of those examples was the Kabbalistic tree of life, and the 10 _Sephiroth_ and 22 paths that connect them:
