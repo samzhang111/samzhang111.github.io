@@ -199,6 +199,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable
   github-pages
 
 BUNDLED WITH
