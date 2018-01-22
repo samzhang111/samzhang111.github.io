@@ -14,12 +14,35 @@
         window_height = window.innerHeight;
         window_width = window.innerWidth;
         document.addEventListener("mousemove", mousemove_handler);
+
+        // Set up touch events for mobile, etc
+        document.addEventListener("touchstart", function (e) {
+          var mousePos = getTouchPos(e);
+          var mouseEvent = new MouseEvent("mousemove", mousePos);
+          document.dispatchEvent(mouseEvent);
+          e.preventDefault();
+        }, false);
+        document.addEventListener("touchend", function (e) {
+          var mouseEvent = new MouseEvent("mouseup", {});
+          document.dispatchEvent(mouseEvent);
+          e.preventDefault();
+        }, false);
+        document.addEventListener("touchmove", function (e) {
+          var mousePos = getTouchPos(e);
+          var mouseEvent = new MouseEvent("mousemove", mousePos);
+          document.dispatchEvent(mouseEvent);
+          e.preventDefault();
+        }, false);
     });
 
     window.addEventListener('resize', function(event){
          window_height = window.innerHeight;
          window_width = window.innerWidth;
     });
+
+    function getTouchPos(event) {
+        return event.touches[0];
+    }
 
     function mousemove_handler (event) {
         // Only act if the last animation has completed.
@@ -56,14 +79,14 @@
     function redraw(timestamp) {
         // Insert spaces or X's into div#space based off x and y.
         
-        var x = Math.ceil(client_x/actual_width) - 1,
-            y = Math.ceil(client_y/actual_height) - 1,
-            x_chars = Math.floor(window_width/actual_width) - 1,
-            y_chars = Math.floor(window_height/actual_height) - 1,
+        var x = Math.ceil(client_x/actual_width),
+            y = Math.ceil(client_y/actual_height),
+            x_chars = Math.ceil(window_width/actual_width),
+            y_chars = Math.ceil(window_height/actual_height),
             space_string = "";
-        
-        for (j=0; j<y_chars; j++) {
-            for (i=0; i<x_chars; i++) {
+
+        for (j=1; j<y_chars; j++) {
+            for (i=1; i<x_chars; i++) {
                 
                threshold = y;
 
