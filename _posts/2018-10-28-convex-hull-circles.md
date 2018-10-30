@@ -31,3 +31,7 @@ I didn't put the convex hull inside of a larger ball, but the theorem in the pap
 The paper goes on to show how this implies that one cannot have a polynomial time algorithm for estimating the volume of a convex hull up to a constant factor given a "well-guaranteed separation oracle". 
 
 I came across this as Exercise 1.1 in Chapter 2 of [Mathematics++](https://www.ams.org/publications/authors/books/postpub/stml-75) by Ida Kantor, Jiří Matoušek, and Robert Šámal. The authors mention that better bounds are known.
+
+Code for the visualization is here: [https://github.com/samzhang111/convexhullcircles](https://github.com/samzhang111/convexhullcircles). The library I used was [JSXGraph](https://jsxgraph.uni-bayreuth.de/wp/index.html), which does some really nice handling around all of the interactions.
+
+I was not expecting to find anything this polished, but I did find it peculiar that 1) when I ran the [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) implementation [they provide](http://jsxgraph.uni-bayreuth.de/~alfred/jsxgraph/distrib/docs/classes/JXG.Math.Geometry.html), it returns the raw coordinates for each point on the hull, rather than any usable reference back to the point objects themselves (which would be useful due to how the library sets up interactions), and 2) I couldn't find documentation on how I would even begin to setup an event hook to redo the convex hull as the points move.
