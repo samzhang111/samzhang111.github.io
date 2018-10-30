@@ -3,17 +3,25 @@ layout: home
 ---
 
 <div id="blog">
-	<h2>About me</h2>
-	<div content>
 
-	    Sam Zhang is currently a "continuing education" student in the math department at the University of Boulder, Colorado. But formerly he was a programmer!
-	    <p>
-	    
-	    You can see a more detailed mini-bio <a href="/html/about/index.html">here</a>.
+    {% for post in site.posts limit:1 %}
+        {% for javascript in post.scripts %}
+            <script src="{{ javascript }}"></script>
+        {% endfor %}
 
-	</div>
+        {% for css in post.styles %}
+            <link href="{{ css }}" rel="stylesheet">
+        {% endfor %}
 
-    <div class="vertical-section"><h2>Posts<a aria-hidden="true" href="/html/x.html">:</a></h2>
+    <div class="post">
+        <div class="title">{{ post.title }}</div>
+        <div class="postdate">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <div class="content"> {{ post.content }} </div>
+    </div>
+
+    {% endfor %}
+
+    <div class="vertical-section"><h2>Posts:</h2>
         <ul>
             {% for post in site.posts %}
 	    <li class="row">
@@ -24,5 +32,18 @@ layout: home
             {% endfor %}
         </ul>
     </div>
+
+	<h2>About me</h2>
+	<div content>
+
+	    Sam Zhang is currently a "continuing education" student in the math department at the University of Boulder, Colorado. But formerly he was a programmer!
+	    <p>
+	    
+	    You can see a more detailed mini-bio <a href="/html/about/index.html">here</a>.
+        <p>
+
+        <a aria-hidden="true" href="/html/x.html">X</a>
+	</div>
+
 
 </div>
