@@ -24,6 +24,8 @@ In the visualization, you can see how the convex hull of the points is contained
 <div id="jxgbox" class="jxgbox" style="width:500px; height:500px">
 </div>
 
-The relative size of a ball of fixed radius inside a unit ball decreases exponentially with respect to the unit ball as dimensionality increases, so this provides an upper bound on the relative size of the convex hull of $n$ points in $N$ dimensions as well. This is the main theorem of the paper.
+In this visualization, the convex hull wasn't required to lie inside of a larger ball. But if it were, each smaller ball would have radius at most $1/2$ of the larger ball. Thus each additional dimension decreases the maximum relative volume of the smaller balls to the larger balls by a factor of $1/2$, and with $k$ points in $N$ dimensions, one has that the volume of the convex hull is bounded above by $\frac{k}{2^N}V(B)$, where $V(B)$ is the volume of the enclosing ball.
+
+The paper goes on to show how this implies that one cannot have a polynomial time algorithm for estimating the volume of a convex hull up to a constant factor given a "well-guaranteed separation oracle" (read the paper! It's barely four pages).
 
 I came across this as Exercise 1.1 in Chapter 2 of [Mathematics++](https://www.ams.org/publications/authors/books/postpub/stml-75) by Ida Kantor, Jiří Matoušek, and Robert Šámal. The authors mention that better bounds are known.
