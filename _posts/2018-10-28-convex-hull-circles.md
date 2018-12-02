@@ -1,8 +1,8 @@
 ---
 layout: post
 title: A visualization of a geometric bound on convex hulls
-date: 2018-06-12 12:00:00
-tag: viz
+date: 2018-10-28 12:00:00
+tag: geometry
 scripts:
     - "https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"
     - "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"

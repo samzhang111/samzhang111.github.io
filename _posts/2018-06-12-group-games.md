@@ -2,7 +2,7 @@
 layout: post
 title: Games based on group theory!
 date: 2018-06-12 12:00:00
-tag: project
+tag: algebra
 ---
 
 Although [many](https://en.wikipedia.org/wiki/Rubik%27s_Cube_group) [games](https://en.wikipedia.org/wiki/Mathematics_of_Sudoku#Sudokus_from_group_tables) have underlying group-theoretic interpretations, I wanted to design a game that:
