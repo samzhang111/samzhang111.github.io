@@ -25,8 +25,8 @@ Now what happens if the radius of the inner circle is allowed to vary? For insta
 
 <div id="copernicusradius" class="jxgbox" style="width:600px; height:600px; margin-left:auto; margin-right:auto;"> </div>
 
-This shape (when $\text{Radius} = 0.25$) is called an astroid. Try setting $\text{Radius}=0.33$ in the slider to see what happens when it is a third as well, though the rounding error becomes quite visible.
+This shape (when $\text{Radius} = 0.25$) is called an [astroid](https://en.wikipedia.org/wiki/Astroid). Try setting $\text{Radius}=0.33$ in the slider to see what happens when the radius of the inner circle is a third of the larger circle as well, although the rounding error becomes quite visible.
 
-In general, shapes traced by small circles rolling inside of larger ones are called [hypocycloids](https://en.wikipedia.org/wiki/Hypocycloid). For a nice exposition of this, as well as some related phenomena (some quite a bit deeper), see [this post on John Baez's blog](http://www.math.ucr.edu/home/baez/rolling/rolling_3.html). I came across this in the book [Lines and Curves](https://www.springer.com/la/book/9780817641610).
+In general, shapes traced by small circles rolling inside of larger ones are called [hypocycloids](https://en.wikipedia.org/wiki/Hypocycloid). For a nice exposition of this, as well as some related phenomena (some quite a bit deeper), see [this post on John Baez's blog](http://www.math.ucr.edu/home/baez/rolling/rolling_3.html). I came across this in the book [Lines and Curves](https://www.springer.com/la/book/9780817641610). An earlier blog post on a similar theme is [Cats on ladders]({% post_url 2018-12-18-cats-on-ladders %}).
 
-I used the library [JSXGraph](https://jsxgraph.org/). For my source code, see [here](https://github.com/samzhang111/linesandcurves).
+I used the library [JSXGraph](https://jsxgraph.org/). For my source code, see [here](https://github.com/samzhang111/linesandcurves). 
