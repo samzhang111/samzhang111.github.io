@@ -31,7 +31,9 @@ Here is a reflected version of the same visualization, in case you want to see f
 
 Those are the first two problems in this wonderful little geometry book:
 
-<a href="https://www.springer.com/la/book/9780817641610"><img src="/images/linesandcurves.jpg?raw=true" alt="Cover of Lines and Curves"/></a>
+<div style="text-align:center;">
+<a href="https://www.springer.com/la/book/9780817641610"><img src="/images/linesandcurves.jpg?raw=true" alt="Cover of Lines and Curves"></a>
+</div>
 
 It was translated from Russian, and originally used in the Gelfand Correspondence School. The perspective of the book is to explore basic geometry from the perspective of "motion": ladders sliding with cats sitting on them, little rings attached to circles being pulled on strings, etc.
 
