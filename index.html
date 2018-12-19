@@ -5,6 +5,13 @@ layout: home
 <div id="blog">
 
     {% for post in site.posts limit:1 %}
+
+    <div class="post">
+        <div class="title">{{ post.title }}</div>
+        <div class="postdate">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <div class="content"> {{ post.content }} </div>
+    </div>
+
         {% for javascript in post.scripts %}
             <script src="{{ javascript }}"></script>
         {% endfor %}
@@ -12,12 +19,6 @@ layout: home
         {% for css in post.styles %}
             <link href="{{ css }}" rel="stylesheet">
         {% endfor %}
-
-    <div class="post">
-        <div class="title">{{ post.title }}</div>
-        <div class="postdate">{{ post.date | date: "%B %-d, %Y" }}</div>
-        <div class="content"> {{ post.content }} </div>
-    </div>
 
     {% endfor %}
 
