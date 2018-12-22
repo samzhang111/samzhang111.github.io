@@ -6,7 +6,8 @@
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('multicat', {
         boundingbox: [-xmax, xmax, ymax, -ymax],
-        axis: true
+        axis: true,
+        pan: false,
     });
 
     let slider = board.create('slider', [[0.75,1],[1.25,1],[0,0,1]],{name:'Ladder'});
@@ -111,7 +112,8 @@
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('solocat', {
         boundingbox: [-xmax/5, xmax, ymax, -ymax/5],
-        axis: true
+        axis: true,
+        pan: false,
     });
 
     let slider = board.create('slider', [[0.75,1],[1.25,1],[0,0,1]],{name:'Ladder'});

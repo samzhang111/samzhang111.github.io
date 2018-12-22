@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('jxgbox', {
                                     boundingbox: [-xmax, xmax, ymax, -ymax],
-                      axis: true
+                      axis: true,
+                      pan: false,
                   });
 
     let points = [];

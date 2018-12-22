@@ -6,7 +6,8 @@
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('copernicus', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
-        axis: true
+        axis: true,
+        pan: false,
     });
 
     let slider = board.create('slider', [[0.15,1.65],[1.25,1.65],[0,0,1]],{name:'Roll', size: 7, label: {fontSize: 15}});
@@ -54,7 +55,8 @@
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('copernicusdetail', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
-        axis: true
+        axis: true,
+        pan: false,
     });
 
     let slider = board.create('slider', [[0.15,1.65],[1.25,1.65],[0,0,1]],{name:'Roll', size: 7, label: {fontSize: 15}});
@@ -104,7 +106,8 @@
     JXG.Options.layer['polygon'] = 8;
     const board = JXG.JSXGraph.initBoard('copernicusradius', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
-        axis: true
+        axis: true,
+        pan: false,
     });
 
     let slider = board.create('slider', [[-1.25,1.75],[1.25,1.75],[0,0,5]],{name:'Roll', size: 7, label: {fontSize: 15}, snapWidth: 0.001});
