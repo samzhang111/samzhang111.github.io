@@ -25,9 +25,14 @@ Maybe the presence of the "Cat" slider gives away this second problem:
 
 Here is a reflected version of the same visualization, in case you want to see four ladders going all at once.
 
-<div id="multicat" class="jxgbox" style="width:500px; height:500px; margin-left:auto; margin-right:auto;">
-</div>
+<div id="multicat" class="jxgbox" style="width:500px; height:500px; margin-left:auto; margin-right:auto;"> </div>
 
+It's an ellipse! Lastly, what shape does the ladder itself trace? Try it:
+
+<div id="ladderastroid" class="jxgbox" style="width:500px; height:500px; margin-left:auto; margin-right:auto;"> </div>
+
+That shape is an [astroid](https://en.wikipedia.org/wiki/Asteroid). To see more about astroids, see the next blog post on [hypocycloids]({% post_url 2018-12-19-hypocycloids %}).
+ 
 
 Those are the first two problems in this wonderful little geometry book:
 

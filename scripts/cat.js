@@ -1,3 +1,51 @@
+// solo cat
+( () => {
+    const xmax = 1.5;
+    const ymax = 1.5;
+    const numpoints = 10;
+
+    JXG.Options.layer['polygon'] = 8;
+    const board = JXG.JSXGraph.initBoard('solocat', {
+        boundingbox: [-xmax/5, xmax, ymax, -ymax/5],
+        axis: true,
+        pan: false,
+    });
+
+    let slider = board.create('slider', [[0.75,1],[1.25,1],[0,0,1]],{name:'Ladder'});
+    let catslider = board.create('slider', [[0.75,1.25],[1.25,1.25],[0,0.5,1]],{name:'Cat'});
+
+    catslider.on('drag', function() {
+        reset();
+        cat1.moveTo([0, catslider.Value()])
+    })
+
+    let ladder1 = board.create('curve', [
+        function(t) { 
+            let x = t * slider.Value(); 
+
+            if (x >= 0 && x <= 1) {
+                return x;
+            }
+        },
+        function(t) { 
+            let y = (1 - t) * Math.sqrt(1 - slider.Value() * slider.Value()); 
+
+            if (y >= 0 && y <= 1) {
+                return y;
+            }
+        }
+        ], { strokewidth: 4});
+    var cat1 = board.create('glider', [0, 0.5, ladder1], {trace: true, name: 'Cat', fixed: true})
+
+    function reset() {
+        cat1.clearTrace();
+        slider.setValue(0);
+    }
+
+    var resetbutton = board.create('button', [0.75, 0.75, "Reset path", reset])
+})();
+
+// multicat
 (() => {
     const xmax = 1.5;
     const ymax = 1.5;
@@ -104,25 +152,22 @@
     var resetbutton = board.create('button', [0.75, 0.75, "Reset path", reset])
 })();
 
-( () => {
+// ladder astroid
+(() => {
     const xmax = 1.5;
     const ymax = 1.5;
     const numpoints = 10;
 
     JXG.Options.layer['polygon'] = 8;
-    const board = JXG.JSXGraph.initBoard('solocat', {
-        boundingbox: [-xmax/5, xmax, ymax, -ymax/5],
+    const board = JXG.JSXGraph.initBoard('ladderastroid', {
+        boundingbox: [-xmax, xmax, ymax, -ymax],
         axis: true,
         pan: false,
     });
 
     let slider = board.create('slider', [[0.75,1],[1.25,1],[0,0,1]],{name:'Ladder'});
-    let catslider = board.create('slider', [[0.75,1.25],[1.25,1.25],[0,0.5,1]],{name:'Cat'});
 
-    catslider.on('drag', function() {
-        reset();
-        cat1.moveTo([0, catslider.Value()])
-    })
+    let ladderopts = {strokewidth: 4, trace: true, opacity: 0.4};
 
     let ladder1 = board.create('curve', [
         function(t) { 
@@ -139,14 +184,67 @@
                 return y;
             }
         }
-        ], { strokewidth: 4});
-    var cat1 = board.create('glider', [0, 0.5, ladder1], {trace: true, name: 'Cat', fixed: true})
+        ], ladderopts);
 
+    let ladder2 = board.create('curve', [
+        function(t) { 
+            let x = t * slider.Value(); 
+
+            if (x >= 0 && x <= 1) {
+                return -x;
+            }
+        },
+        function(t) { 
+            let y = (1 - t) * Math.sqrt(1 - slider.Value() * slider.Value()); 
+
+            if (y >= 0 && y <= 1) {
+                return y;
+            }
+        }
+        ], ladderopts);
+
+    let ladder3 = board.create('curve', [
+        function(t) { 
+            let x = t * slider.Value(); 
+
+            if (x >= 0 && x <= 1) {
+                return -x;
+            }
+        },
+        function(t) { 
+            let y = (1 - t) * Math.sqrt(1 - slider.Value() * slider.Value()); 
+
+            if (y >= 0 && y <= 1) {
+                return -y;
+            }
+        }
+        ], ladderopts );
+
+    let ladder4 = board.create('curve', [
+        function(t) { 
+            let x = t * slider.Value(); 
+
+            if (x >= 0 && x <= 1) {
+                return x;
+            }
+        },
+        function(t) { 
+            let y = (1 - t) * Math.sqrt(1 - slider.Value() * slider.Value()); 
+
+            if (y >= 0 && y <= 1) {
+                return -y;
+            }
+        }
+        ], ladderopts );
 
     function reset() {
-        cat1.clearTrace();
+        ladder1.clearTrace();
+        ladder2.clearTrace();
+        ladder3.clearTrace();
+        ladder4.clearTrace();
         slider.setValue(0);
     }
 
     var resetbutton = board.create('button', [0.75, 0.75, "Reset path", reset])
 })();
+
