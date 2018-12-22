@@ -22,29 +22,9 @@ layout: home
 
     {% endfor %}
 
-    <div class="vertical-section"><h2>Posts:</h2>
-        <ul>
-            {% for post in site.posts %}
-	    <li class="row">
-		    <span class="date">{{ post.date | date_to_string }}</span>
-		    <span class="tag">[{{ post.tag }}]</span>
-		    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-            {% endfor %}
-        </ul>
-    </div>
 
-	<h2>About me</h2>
-	<div content>
-
-	    Sam Zhang does math, computer science, and data science at the University of Boulder, Colorado. But formerly he was a programmer!
-	    <p>
-	    
-	    You can see a more detailed mini-bio <a href="/html/about">here</a>.
-        <p>
+    {% include footer.html %}
 
         <a aria-hidden="true" href="/html/x">X</a>
-	</div>
-
 
 </div>
