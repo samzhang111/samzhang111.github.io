@@ -41,7 +41,7 @@ let eqnchange = (eqn) => {
 
     try {
         compiled = math.compile(eqn);
-        cubefunc = (x, y) => compiled.eval({x: x/20, y: y/20})
+        cubefunc = (x, y) => compiled.eval({x: x/5, y: y/5})
 
         erase();
 
