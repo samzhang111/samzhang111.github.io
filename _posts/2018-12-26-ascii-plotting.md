@@ -6,7 +6,7 @@ tag: weird
 scripts:
     - "/scripts/mathjs-5.4.0-min.js"
     - "/scripts/lodash-4.17.11-min.js"
-    - "/scripts/asciiplot.js"
+    - "/scripts/asciiplot2.js"
 ---
 
 
