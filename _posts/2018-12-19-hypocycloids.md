@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hypocycloids
-date: 2018-12-18 12:00:00
+date: 2018-12-19 12:00:00
 tag: geometry
 scripts:
     - "/scripts/jsxgraphcore-0.99.7.js"
