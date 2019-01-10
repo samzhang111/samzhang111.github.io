@@ -19,11 +19,15 @@
 
     let perp1 = board.create('perpendicularsegment', [gtree1, tree1], {dash: 2})
     let perp2op = board.create('perpendicularsegment', [gtree2, tree2], {visible: false})
-    let reflected = board.create('reflection', [perp2op.point, gtree2], {visible: false})
+    let reflected = board.create('reflection', [perp2op.point, gtree2], {name: 'Q'})
     let perp2 = board.create('segment', [tree2, reflected], {color: 'black', dash: 2})
+
+    perp1.point.setAttribute({visible: true, name: 'P', withLabel: true})
 
     let angle1 = board.create('angle', [perp1.point, tree1, gallows], {radius: 0.3})
     let angle2 = board.create('angle', [gallows, tree2, reflected], {radius: 0.3})
+
+    
 
     let treasureline = board.create('segment', [perp1.point, reflected], {color: 'green'})
     let treasure = board.create('midpoint', [perp1.point, reflected], {name: "Treasure"})
