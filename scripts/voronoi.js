@@ -6,6 +6,7 @@ function drawVoronoi() {
     eraseVoronoi();
     let linkDisplay = document.createElement("div");
     linkDisplay.setAttribute("id", "attachedLinkOverlayForDelaunay")
+    linkDisplay.style['outline'] = '5px solid black';
     linkDisplay.style['position'] = 'fixed';
     linkDisplay.style['top'] = '1em';
     linkDisplay.style['right'] = '10%';
@@ -60,7 +61,10 @@ function drawVoronoi() {
 
         let canvaspts = pixelToCanvas(centerX, centerY);
 
-        ctx.fillRect(canvaspts.x - 2, canvaspts.y - 2, 5, 5);
+        if (showVoronoi) {
+            ctx.fillRect(canvaspts.x - 2, canvaspts.y - 2, 5, 5);
+        }
+
         points.push([canvaspts.x, canvaspts.y])
         pointsWithNodes.push([canvaspts.x, canvaspts.y, node])
     }
@@ -94,6 +98,13 @@ function drawVoronoi() {
         let transformed = pixelToCanvas(event.layerX, event.layerY);
         let cell = delaunay.find(transformed.x, transformed.y)
 
+        // for tablets, a second touch means visit
+        if (event.type == 'touchstart' && visitedCell == cell) {
+            let node = voronoiCellToElement.get(cell)
+
+            node.click();
+        }
+
         if (visitedCell != cell) {
             if (visitedCell !== undefined) {
                 let oldLink = voronoiCellToElement.get(visitedCell);
@@ -107,7 +118,6 @@ function drawVoronoi() {
                 }
             }
 
-            linkDisplay.style['outline'] = '5px solid black';
             let newLink = voronoiCellToElement.get(cell);
             oldLink = newLink;
             oldLinkStyle = newLink.style['outline'] || 'none';
@@ -144,13 +154,13 @@ function drawVoronoi() {
 
     window.addEventListener("resize", drawVoronoi)
     window.addEventListener("mousemove", handleMouseMoveVoronoiGlobal);
-    window.addEventListener("touchmove", handleMouseMoveVoronoiGlobal);
+    window.addEventListener("touchstart", handleMouseMoveVoronoiGlobal);
     window.addEventListener("click", handleMouseClickVoronoiGlobal);
 };
 
 function eraseVoronoi() {
     window.removeEventListener("mousemove", handleMouseMoveVoronoiGlobal);
-    window.removeEventListener("touchmove", handleMouseMoveVoronoiGlobal);
+    window.removeEventListener("touchstart", handleMouseMoveVoronoiGlobal);
     window.removeEventListener("click", handleMouseClickVoronoiGlobal);
     window.removeEventListener("resize", drawVoronoi)
 
@@ -171,4 +181,4 @@ function toggleVoronoi() {
     drawVoronoi();
 }
 
-document.addEventListener("DOMContentLoaded", drawVoronoi);
+window.addEventListener("load", drawVoronoi);
