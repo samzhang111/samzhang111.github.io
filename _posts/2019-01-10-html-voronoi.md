@@ -8,13 +8,16 @@ scripts:
     - "/scripts/voronoi.js"
 ---
 
-Press this button to overlay a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) over this page, using the links and input tags on this page as points.
+What you are looking at is a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) constructed on a canvas laid over this page, using the centers of link and input elements as points. 
 
-<input type="button" onClick="drawVoronoi()" value="Voronoi me!"/>
-<input type="button" onClick="eraseVoronoi()" value="Erase"/>
+<input type="button" onClick="toggleVoronoi()" value="Toggle Voronoi"/>
 
-Little red dots are drawn over the points, which are the centers of the bounding boxes of the links and inputs. If your screen is resized small enough, then the link text may wrap, causing the center to appear to exist off of any particular point. The diagram is recalculated on resize.
+<input type="button" onClick="eraseVoronoi()" value="Disable"/>
 
-Originally I wanted to do this on all HTML elements, not just links, but since most elements like divs are block display by default, their centers are often far from the actual content of the element.
+I did this as a whimsical project to interpret DOM elements geometrically, but then I realized it could have some interesting uses for accessibility. So I added the feature where the link text or input value of the currently active Voronoi cell is shown in the upper-right corner, and clicking a cell clicks the corresponding input/link.
 
+You can toggle the outlines of the Voronoi cells themselves using "Toggle Visibility" button (to get a sense for how this would feel deployed as an accessibility tool). Or you can disable it altogether using the "Disable" button.
 
+Little red dots are drawn over the points, which are the centers of the bounding boxes of the links and inputs (these are what go into the Voronoi algorithm). After playing with this for a few minutes, it appears that the long links are hard to click in this model, since the center does not expand with the size of the link. What may be better is to use the known extension of the Voronoi algorithm over _line segments_, and to model each input as a segment instead.
+
+The source code is on Github [here](https://github.com/samzhang111/html-voronoi).  There is nothing actually specific about this code for my website, so I will soon make this into a bookmarklet!
