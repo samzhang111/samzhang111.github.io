@@ -11,11 +11,11 @@ Step 1.  Drag the following link into your bookmarks toolbar: <a href='javascrip
 
 Step 2. Press it to voronoize whatever page you are on!
 
-For example, here is a screenshot of what happens when the voronoizer is run on [wikipedia.org](https://www.wikipedia.org):
+For example, here is a screenshot of what happens when I voronoize [wikipedia.org](https://www.wikipedia.org):
 
 <img src="/images/voronoi-wikipedia.png" style="width: 600px" alt="Wikipedia 'voronized'"/>
 
-And here is what it looks like on [arxiv.org](https://arxiv.org):
-<img src="/images/voronoi-arxiv.png" style="width: 600px" alt="Arxiv 'voronized'"/>
+And here is [arxiv.org](https://arxiv.org) voronoized:
+<img src="/images/voronoi-arxiv.png" style="width: 600px" alt="Arxiv 'voronized'"/> 
 
 Again, the code for this is available on Github [here](https://github.com/samzhang111/html-voronoi).
