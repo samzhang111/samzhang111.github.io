@@ -15,4 +15,7 @@ For example, here is a screenshot of what happens when the voronoizer is run on 
 
 <img src="/images/voronoi-wikipedia.png" style="width: 600px" alt="Wikipedia 'voronized'"/>
 
+And here is what it looks like on [arxiv.org](https://arxiv.org):
+<img src="/images/voronoi-arxiv.png" style="width: 600px" alt="Arxiv 'voronized'"/>
+
 Again, the code for this is available on Github [here](https://github.com/samzhang111/html-voronoi).
