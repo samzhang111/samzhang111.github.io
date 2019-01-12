@@ -9,7 +9,8 @@ scripts:
 
 What you are looking at is a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) constructed on a canvas laid over this page, using the centers of link and input elements as points. 
 
-<input id="toggle" type="button" onClick="(function() {
+<input id="toggle" type="button" onClick="(function(event) {
+    event.stopPropagation();
     voronoize.toggleVoronoi();
     if (voronoize.showVoronoi) {
         document.getElementById('toggle').value = 'Hide Voronoi lines'
@@ -17,7 +18,7 @@ What you are looking at is a [Voronoi diagram](https://en.wikipedia.org/wiki/Vor
     else {
         document.getElementById('toggle').value = 'Show Voronoi lines'
     }
-})()" value="Hide Voronoi lines"/>
+})(event)" value="Hide Voronoi lines"/>
 
 <input type="button" onClick="voronoize.eraseVoronoi()" value="Disable"/>
 
