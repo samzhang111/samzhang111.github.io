@@ -19,9 +19,26 @@ html {
     }
 }
 
+.homelink {
+    text-align: right;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.homelink:visited {
+    color: black;
+}
+
+.homelink:active{
+    color: black;
+}
+
 .post {
     .title {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
     }
 
