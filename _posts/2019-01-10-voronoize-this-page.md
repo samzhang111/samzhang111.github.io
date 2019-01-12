@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Voronoi this page!
-date: 2019-01-09 12:00:00
+title: Voronoize this page!
+date: 2019-01-10 12:00:00
 tag: weird
 scripts:
-    - "https://unpkg.com/d3-delaunay@4.1.5/dist/d3-delaunay.js"
-    - "/scripts/voronoi.js"
+    - "/scripts/voronoi-bundle.js"
 ---
 
 What you are looking at is a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) constructed on a canvas laid over this page, using the centers of link and input elements as points. 
 
 <input id="toggle" type="button" onClick="(function() {
-    toggleVoronoi();
-    if (showVoronoi) {
+    voronoize.toggleVoronoi();
+    if (voronoize.showVoronoi) {
         document.getElementById('toggle').value = 'Hide Voronoi lines'
     }
     else {
@@ -20,7 +19,7 @@ What you are looking at is a [Voronoi diagram](https://en.wikipedia.org/wiki/Vor
     }
 })()" value="Hide Voronoi lines"/>
 
-<input type="button" onClick="eraseVoronoi()" value="Disable"/>
+<input type="button" onClick="voronoize.eraseVoronoi()" value="Disable"/>
 
 I did this on a whim, but then I realized it could be interesting for accessibility. So I added the feature where the link text or input value of the currently active Voronoi cell is shown in the upper-right corner, and clicking a cell clicks the corresponding input/link.
 
