@@ -1,11 +1,18 @@
     <div class="vertical-section"><h2>Posts</h2>
         <ul>
             {% for post in site.posts %}
+        {% capture postyear %} {{ post.date | date: '%Y' }} {% endcapture %}
+        {% assign postyear = postyear | plus: 0 %}
+
+        {% if postyear > 2016 %}
 	    <li class="row">
 		    <span class="date">{{ post.date | date_to_string }}</span>
 		    <span class="tag">[{{ post.tag }}]</span>
 		    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 	    </li>
+
+        {% endif %}
+
             {% endfor %}
         </ul>
     </div>
@@ -13,5 +20,5 @@
 	<h2>About</h2>
 	<div content>
 
-        The Monkey Brain is a mostly interactive blog of mathematical curiosities, maintained by <a href="/html/about">Sam Zhang</a>. Sam currently does math at the University of Boulder, Colorado. Formerly he was a programmer.
+        The Monkey Brain is <a href="/html/about">Sam Zhang</a>'s interactive blog of mathematical curiosities.
 	</div>
