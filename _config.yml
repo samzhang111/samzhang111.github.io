@@ -8,7 +8,7 @@ collections:
 kramdown:
     input: GFM
     hard_wrap: false
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
 url: "https://sam.zhang.fyi"
