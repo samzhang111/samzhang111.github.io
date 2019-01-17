@@ -7,7 +7,6 @@
         {% if postyear > 2016 %}
 	    <li class="row">
 		    <span class="date">{{ post.date | date_to_string }}</span>
-		    <span class="tag">[{{ post.tag }}]</span>
 		    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 	    </li>
 
