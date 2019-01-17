@@ -10,3 +10,5 @@ kramdown:
     hard_wrap: false
 gems:
   - jekyll-feed
+  - jekyll-sitemap
+url: "https://sam.zhang.fyi"
