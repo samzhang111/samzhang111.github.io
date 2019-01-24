@@ -1,0 +1,51 @@
+---
+layout: default
+title: gallery
+---
+
+<h1>Gallery</h1>
+
+<div class="gallery" content>
+
+    Here is a gallery of the mathematical objects on this blog.
+
+    <h2>Shapes</h2>
+    <div class="section">
+        <a href="{% post_url 2019-01-24-whitneys-umbrella %}">
+            <img alt="Whitney's Umbrella" class="thumbnail" src="/images/thumbnails/umbrella.png" />
+        </a>
+    </a>
+    </div>
+
+    <div>
+        <h2>Plane geometry</h2>
+        <a href="{% post_url 2018-12-19-hypocycloids %}">
+            <img alt="Hypocycloids" class="thumbnail" src="/images/thumbnails/hypocycloids.png" />
+        </a>
+
+        <a href="{% post_url 2018-12-18-cats-on-ladders %}">
+            <img alt="Cats on Ladders" class="thumbnail" src="/images/thumbnails/cats.png" />
+        </a>
+
+        <a href="{% post_url 2018-10-28-convex-hull-circles %}">
+            <img alt="A bound due to Elekes" class="thumbnail" src="/images/thumbnails/elekes.png" />
+        </a>
+    </div>
+
+    <div>
+        <h2>Number theory</h2>
+        <a href="{% post_url 2018-12-01-oeis %}">
+            <img alt="OEIS network" class="thumbnail" src="/images/thumbnails/oeis-network.png" />
+        </a>
+    </div>
+
+    <div>
+        <h2>Other</h2>
+        <a href="{% post_url 2018-12-26-ascii-plotting %}">
+            <img alt="ASCII function plotting" class="thumbnail" src="/images/thumbnails/asciiplot.png" />
+        </a>
+        <a href="{% post_url 2018-01-22-usecode-search %}">
+            <img alt="Use code t-sne" class="thumbnail" src="/images/thumbnails/usecode-tsne.png" />
+        </a>
+    </div>
+</div>
