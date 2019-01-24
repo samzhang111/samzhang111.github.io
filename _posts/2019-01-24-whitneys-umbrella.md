@@ -16,6 +16,6 @@ I've been test driving the excellent [mathbox](https://github.com/unconed/mathbo
 
 [Full screen version](/html/umbrella). 
 
-I have been thinking about how to organize the contents of this blog more visually as well. Thus I have created [an early version of a "gallery" concept](/html/gallery).
+I have been thinking about how to organize the contents of this blog more visually as well. Thus I have created a preliminary version of ["a mathematical zoo"](/html/gallery).
 
 My main inspirations for beautiful mathematical illustrations have been [Geometry and the Imagination](https://www.maa.org/press/maa-reviews/geometry-and-the-imagination) and [A Topological Picturebook](https://www.springer.com/us/book/9780387345420). As I become more comfortable with mathbox, and (painfully) shake the rust off of my d3 skills (while learning d3 v4), I hope more of the images from those books make their way to this blog.
