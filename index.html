@@ -13,7 +13,7 @@ layout: home
     </div>
 
         {% for javascript in post.scripts %}
-            <script src="{{ javascript }}"></script>
+            <script defer src="{{ javascript }}"></script>
         {% endfor %}
 
         {% for css in post.styles %}

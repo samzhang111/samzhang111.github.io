@@ -14,7 +14,7 @@ I've been test driving the excellent [mathbox](https://github.com/unconed/mathbo
 
 <div id="umbrella" style="width:600px;height:600px;margin-right:auto"></div>
 
-[Full screen version](/html/umbrella). 
+[Full screen version](/html/fullscreen/umbrella). 
 
 I have been thinking about how to organize the contents of this blog more visually as well. Thus I have created a preliminary version of ["a mathematical zoo"](/html/gallery).
 

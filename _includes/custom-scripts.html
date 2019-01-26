@@ -9,7 +9,7 @@
 {% endcomment %}
 
 {% for javascript in page.scripts %}
-    <script src="{{ javascript }}"></script>
+    <script defer src="{{ javascript }}"></script>
 {% endfor %}
 
 {% for css in page.styles %}
