@@ -18,7 +18,7 @@ three.renderer.setClearAlpha(0);
 
 var camera = mathbox.camera({
     proxy: true,
-    position: [2, 0.4, 1.5]
+    position: [3, 0.4, 1.5]
 })
 mathbox.set('focus', 1);
 
@@ -32,14 +32,14 @@ var view = mathbox.cartesian({
 });
 
 let r = 1;
-let angle = Math.PI/6;
+let angle = Math.PI/3;
 
 let cylinderData = view.area({
   id: 'cylinder',
   width: 64,
   height: 64,
   rangeX: [0, 2*Math.PI],
-  rangeY: [-2.5, 2.5],
+  rangeY: [-3, 3],
   axes: [1, 3],
   expr: function (emit, x, y, i, j, time) {
     emit(r*Math.cos(x), y, r*Math.sin(x))
