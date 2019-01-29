@@ -22,19 +22,19 @@ var camera = mathbox.camera({
 })
 mathbox.set('focus', 1);
 
-let size = 2;
-let xmin = ymin = zmin = -size;
-let xmax = ymax = zmax = size;
+var size = 2;
+var xmin = ymin = zmin = -size;
+var xmax = ymax = zmax = size;
 
 var view = mathbox.cartesian({
   range: [[xmin, xmax], [ymin, ymax], [zmin, zmax]],
   scale: [1, 1, 1],
 });
 
-let r = 1;
-let angle = Math.PI/3;
+var r = 1;
+var angle = Math.PI/3;
 
-let cylinderData = view.area({
+var cylinderData = view.area({
   id: 'cylinder',
   width: 64,
   height: 64,
@@ -50,7 +50,7 @@ let cylinderData = view.area({
   fps: 1
 })
 
-let intersectingPlane = view.area({
+var intersectingPlane = view.area({
   id: 'plane',
   width: 64,
   height: 64,
@@ -67,29 +67,29 @@ let intersectingPlane = view.area({
 })
 
 /*
-let color=    view.volume({
+var color=    view.volume({
       id: "color",
       width: 64,
       height: 64,
       items: 1,
       channels: 4,
       expr: function(emit, x, y, z){
-          let color = y*y/4
-          let color2 = (x*y + 4)/8
+          var color = y*y/4
+          var color2 = (x*y + 4)/8
           emit(color2, color, 0, 0.75);
     },
     live: false
     })
 */
 
-let minor = r
-let c = r*Math.tan(angle)
-let major = r/Math.cos(angle)
-let cx = c*Math.cos(angle)
-let cy = c*Math.sin(angle)
-let ellipseY = major*Math.sin(angle);
-let sy = Math.sqrt(r*r + c*c)
-let slowdown = 3;
+var minor = r
+var c = r*Math.tan(angle)
+var major = r/Math.cos(angle)
+var cx = c*Math.cos(angle)
+var cy = c*Math.sin(angle)
+var ellipseY = major*Math.sin(angle);
+var sy = Math.sqrt(r*r + c*c)
+var slowdown = 3;
 
 view.interval({
     channels: 3,
@@ -99,9 +99,9 @@ view.interval({
     expr: function(emit, x, i, t, delta) {
         t = t / slowdown;
 
-        let xpos = r*Math.cos(x + t)
-        let zpos = minor*Math.sin(x + t)
-        let ypos = ellipseY * Math.cos(x + t)
+        var xpos = r*Math.cos(x + t)
+        var zpos = minor*Math.sin(x + t)
+        var ypos = ellipseY * Math.cos(x + t)
 
         emit(-xpos, sy, zpos)
         emit(-xpos, ypos, zpos)
@@ -122,9 +122,9 @@ view.interval({
     range: [0, Math.PI],
     expr: function(emit, x, i, t, delta) {
         t = Math.PI - t/slowdown;
-        let xpos = r*Math.cos(x + t)
-        let zpos = minor*Math.sin(x + t)
-        let ypos = ellipseY * Math.cos(x + t)
+        var xpos = r*Math.cos(x + t)
+        var zpos = minor*Math.sin(x + t)
+        var ypos = ellipseY * Math.cos(x + t)
 
         emit(xpos, -sy, zpos)
         emit(xpos, -ypos, zpos)

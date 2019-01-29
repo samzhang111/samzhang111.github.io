@@ -22,22 +22,22 @@ var camera = mathbox.camera({
 })
 mathbox.set('focus', 1);
 
-let colors = {
+var colors = {
     x: new THREE.Color(0xFF4136),
     y: new THREE.Color(0x2ECC40),
     z: new THREE.Color(0x0074D9),
 };
 
-let size = 2;
-let xmin = ymin = zmin = -size;
-let xmax = ymax = zmax = size;
+var size = 2;
+var xmin = ymin = zmin = -size;
+var xmax = ymax = zmax = size;
 
 var view = mathbox.cartesian({
   range: [[xmin, xmax], [ymin, ymax], [zmin, zmax]],
   scale: [1, 1, 1],
 });
 
-let sampler = view.area({
+var sampler = view.area({
   id: 'sampler',
   width: 64,
   height: 64,
@@ -50,24 +50,24 @@ let sampler = view.area({
   channels: 3,
 });
 
-let color=    view.volume({
+var color=    view.volume({
       id: "color",
       width: 64,
       height: 64,
       items: 1,
       channels: 4,
       expr: function(emit, x, y, z){
-          let color = y*y/4
-          let color2 = (x*y + 4)/8
+          var color = y*y/4
+          var color2 = (x*y + 4)/8
           emit(color2, color, 0, 0.75);
     },
     live: false
     })
 
     /*
-let xlim = 4, ylim = 2, zlim = 2;
+var xlim = 4, ylim = 2, zlim = 2;
 
-let faces = view.voxel({
+var faces = view.voxel({
     id: 'faces',
     items: 17,
     channels: 3,

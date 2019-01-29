@@ -16,10 +16,10 @@ var three = mathbox.three;
 three.renderer.setClearColor(new THREE.Color(0xFFFFFF), 1.0);
 three.renderer.setClearAlpha(0);
 
-let blowupDelay = 3;
+var blowupDelay = 3;
 
-let origin3 = [0, -2, 0]
-let origin = Array.concat(origin3, [0])
+var origin3 = [0, -2, 0]
+var origin = origin3.concat([0])
 
 var camera = mathbox.camera({
     proxy: true,
@@ -33,10 +33,10 @@ var camera = mathbox.camera({
 
 mathbox.set('focus', 1);
 
-let size = 2;
-let xmin = ymin = zmin = -size;
-let xmax = ymax = zmax = size;
-let partitions = 17; // + 1
+var size = 2;
+var xmin = ymin = zmin = -size;
+var xmax = ymax = zmax = size;
+var partitions = 17; // + 1
 
 var view = mathbox.cartesian({
   range: [[xmin, xmax], [ymin, ymax], [zmin, zmax]],
@@ -53,15 +53,15 @@ view.play({
   ]
 })
 
-let colors = {
+var colors = {
     x: new THREE.Color(0xFF4136),
     y: new THREE.Color(0x2ECC40),
     z: new THREE.Color(0x0074D9),
 };
 
-let defaultRange = [origin[1], origin[1]]
+var defaultRange = [origin[1], origin[1]]
 
-let xaxis = view
+var xaxis = view
   .axis({
     axis: 1,
     width: 7,
@@ -70,7 +70,7 @@ let xaxis = view
     origin,
   });
 
-let zaxis = view.axis({
+var zaxis = view.axis({
     axis: 3,
     width: 7,
     end: true,
@@ -79,7 +79,7 @@ let zaxis = view.axis({
   });
 
 
-let grid = view.grid({
+var grid = view.grid({
     axes: 'xz',
     width: 2,  
     divideX: 20,
@@ -89,7 +89,7 @@ let grid = view.grid({
     origin,
   });
 
-let circle = view.interval({
+var circle = view.interval({
     channels: 3,
     items: 1,
     width: 64,
@@ -109,7 +109,7 @@ function adjX(x) {
     return (x + 1.2)/7
 }
 
-let blowupGrid = view.interval({
+var blowupGrid = view.interval({
     id: 'blowupGrid',
     channels: 3,
     items: 2,
@@ -117,14 +117,14 @@ let blowupGrid = view.interval({
     live: true,
     range: defaultRange,
     expr: function(emit, x, i, t, delta) {
-        let curveX = x*x - 1
-        let curveZ = x*x*x - x
+        var curveX = x*x - 1
+        var curveZ = x*x*x - x
 
-        let h = Math.sqrt(curveX * curveX + curveZ * curveZ)
-        let xCircle = curveX/h
-        let zCircle = curveZ/h
+        var h = Math.sqrt(curveX * curveX + curveZ * curveZ)
+        var xCircle = curveX/h
+        var zCircle = curveZ/h
 
-        let xAdj = adjX(x)
+        var xAdj = adjX(x)
 
         emit(-xCircle, xAdj * 2 * Math.PI, -zCircle)
         emit(xCircle, xAdj * 2 * Math.PI, zCircle)
@@ -136,7 +136,7 @@ let blowupGrid = view.interval({
     visible: false,
 })
 
-let projectiveLine = view.interval({
+var projectiveLine = view.interval({
     id: 'projectiveLine',
     channels: 3,
     items: 2,
@@ -152,7 +152,7 @@ let projectiveLine = view.interval({
     color: colors.y,
 })
 
-let projectiveIntersections = view.array({
+var projectiveIntersections = view.array({
     id: 'projectiveIntersections',
     channels: 3,
     items: 2,
@@ -170,7 +170,7 @@ let projectiveIntersections = view.array({
     ],
 })
 
-let groundCurve = view.interval({
+var groundCurve = view.interval({
     id: 'groundCurve',
     channels: 3,
     items: 2,
@@ -191,7 +191,7 @@ let groundCurve = view.interval({
     ]
 })
 
-let blownUpCurve = view.interval({
+var blownUpCurve = view.interval({
     id: 'blownUpCurve',
     channels: 3,
     items: 2,
@@ -199,10 +199,10 @@ let blownUpCurve = view.interval({
     live: false,
     range: defaultRange,
     expr: function(emit, x, i, t) {
-        let curveX = x*x - 1
-        let curveZ = x*x*x - x
+        var curveX = x*x - 1
+        var curveZ = x*x*x - x
 
-        let xAdj = adjX(x)
+        var xAdj = adjX(x)
 
         emit(curveX, xAdj * 2 * Math.PI, curveZ)
     }
@@ -213,7 +213,7 @@ let blownUpCurve = view.interval({
 })
 
 
-let blownUpCurveGuidelines =  view.interval({
+var blownUpCurveGuidelines =  view.interval({
     id: 'blownUpCurveGuidelines',
     channels: 3,
     items: 2,
@@ -221,10 +221,10 @@ let blownUpCurveGuidelines =  view.interval({
     live: true,
     range: defaultRange,
     expr: function(emit, x, i, t) {
-        let curveX = x*x - 1
-        let curveZ = x*x*x - x
+        var curveX = x*x - 1
+        var curveZ = x*x*x - x
 
-        let xAdj = adjX(x)
+        var xAdj = adjX(x)
 
         emit(curveX, origin[1], curveZ)
         emit(curveX, xAdj * 2 * Math.PI, curveZ)
@@ -276,8 +276,8 @@ view.play({
     ]
 })
 
-let curveRange = [-1.2, 1.2]
-let gridRange = [-1.3, 1.5]
+var curveRange = [-1.2, 1.2]
+var gridRange = [-1.3, 1.5]
 
 blowup('#blowupGrid', gridRange)
 blowup('#blownUpCurve', curveRange)
