@@ -1,17 +1,17 @@
-let test_div = document.getElementById('measure');
+var test_div = document.getElementById('measure');
 test_div.textContent = "x"
-let char_width = test_div.clientWidth;
-let char_height = test_div.clientHeight;
+var char_width = test_div.clientWidth;
+var char_height = test_div.clientHeight;
 test_div.textContent = '';
-let space_elem = document.getElementById("space");
-let width = space_elem.clientWidth, height = space_elem.clientHeight;
-let h_cells = width / char_width, v_cells = height / char_height;
+var space_elem = document.getElementById("space");
+var width = space_elem.clientWidth, height = space_elem.clientHeight;
+var h_cells = width / char_width, v_cells = height / char_height;
 
-let cubeheight = 2, cubewidth = cubeheight * 2;
-let boardsize = Math.floor(h_cells / 2);
-let halfboard = Math.floor(boardsize / 2);
+var cubeheight = 2, cubewidth = cubeheight * 2;
+var boardsize = Math.floor(h_cells / 2);
+var halfboard = Math.floor(boardsize / 2);
 
-let setcoord = (x, y, val) => {
+function setcoord (x, y, val) {
     if (x >= halfboard || x <= -halfboard || y > halfboard || y <= -halfboard) {
     }
     else {
@@ -19,29 +19,38 @@ let setcoord = (x, y, val) => {
     }
 };
 
-let board = Array(boardsize).fill().map( () => Array(boardsize).fill(0));
+var board = []
+for (var i = 0; i<boardsize; i++) {
+    board[i] = [];
+    for (var j = 0; j<boardsize; j++) {
+        board[i][j] = 0;
+    }
+}
 
-let errorfield = document.getElementById('error');
-let eqnfield = document.getElementById('equation')
-eqnfield.addEventListener('keyup', (e) => {
+var errorfield = document.getElementById('error');
+var eqnfield = document.getElementById('equation')
+eqnfield.addEventListener('keyup', function(e) {
     if (e.key != 'Enter') return;
 
     eqnchange(eqnfield.value);
 });
 
 // handle changing of equations
-eqnfield.addEventListener('blur', (e) => {
+eqnfield.addEventListener('blur', function(e) {
     eqnchange(eqnfield.value);
 });
 
-let eqnchange = (eqn) => {
+function eqnchange (eqn) {
     if (eqn===undefined || eqn.trim() == '') {
         eqn = eqnfield.getAttribute("placeholder");
     }
 
     try {
         compiled = math.compile(eqn);
-        cubefunc = (x, y) => compiled.eval({x: x/5, y: y/5})
+
+        function cubefunc(x, y) {
+            return compiled.eval({x: x/5, y: y/5})
+        }
 
         erase();
 
@@ -57,10 +66,10 @@ let eqnchange = (eqn) => {
 function march(cubefunc) {
     for (var i = 0 - halfboard; i < halfboard; i+=2) {
         for (var j = 0 - halfboard; j < halfboard; j+=3) {
-            let tl = cubefunc(i, j) >= 0 ? 1 : -1
-            let bl = cubefunc(i, j + 3) >= 0 ? 1 : -1
-            let tr = cubefunc(i + 2, j) >= 0 ? 1 : -1
-            let br = cubefunc(i + 2, j + 3) >= 0 ? 1 : -1
+            var tl = cubefunc(i, j) >= 0 ? 1 : -1
+            var bl = cubefunc(i, j + 3) >= 0 ? 1 : -1
+            var tr = cubefunc(i + 2, j) >= 0 ? 1 : -1
+            var br = cubefunc(i + 2, j + 3) >= 0 ? 1 : -1
 
             if (tl == bl && bl == tr && tr == br) {
                 if (tl > 0) {
@@ -180,10 +189,10 @@ function march(cubefunc) {
 }
 
 function redraw(board) {
-    let toChars = (line) => {
-        return _.map(line, val => {
-            let c = val[0];
-            let chr = val[1];
+    function toChars (line) {
+        return _.map(line, function(val) {
+            var c = val[0];
+            var chr = val[1];
             if (c == 1) {
                 return ' ' + chr;
             }
@@ -197,9 +206,9 @@ function redraw(board) {
             return '  ';
         })
     }
-    let raster = _.map(board, toChars)
-    let boardlines = _.invokeMap(raster, Array.prototype.join, "")
-    let boardstr = boardlines.join("\r\n")
+    var raster = _.map(board, toChars)
+    var boardlines = _.invokeMap(raster, Array.prototype.join, "")
+    var boardstr = boardlines.join("\r\n")
 
     space_elem.textContent = boardstr;
 }
@@ -207,7 +216,13 @@ function redraw(board) {
 function erase() {
     errorfield.textContent = '';
 
-    board = Array(boardsize).fill().map( () => Array(boardsize).fill(0));
+    board = []
+    for (var i = 0; i<boardsize; i++) {
+        board[i] = [];
+        for (var j = 0; j<boardsize; j++) {
+            board[i][j] = 0;
+        }
+    }
     redraw(board);
 }
 
