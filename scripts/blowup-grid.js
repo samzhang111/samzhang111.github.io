@@ -16,7 +16,7 @@ var three = mathbox.three;
 three.renderer.setClearColor(new THREE.Color(0xFFFFFF), 1.0);
 three.renderer.setClearAlpha(0);
 
-var blowupDelay = 3;
+let blowupDelay = 3;
 
 var camera = mathbox.camera({
     proxy: true,
@@ -31,9 +31,9 @@ var camera = mathbox.camera({
 
 mathbox.set('focus', 1);
 
-var size = 2;
-var xmin = ymin = zmin = -size;
-var xmax = ymax = zmax = size;
+let size = 2;
+let xmin = ymin = zmin = -size;
+let xmax = ymax = zmax = size;
 
 var view = mathbox.cartesian({
   range: [[xmin, xmax], [ymin, ymax], [zmin, zmax]],
@@ -50,17 +50,17 @@ view.play({
   ]
 })
 
-var colors = {
+let colors = {
     x: new THREE.Color(0xFF4136),
     y: new THREE.Color(0x2ECC40),
     z: new THREE.Color(0x0074D9),
 };
 
-var origin = [0, -2, 0, 0]
-var defaultRange = [origin[1], origin[1]]
-var partitions = 17; // + 1
+let origin = [0, -2, 0, 0]
+let defaultRange = [origin[1], origin[1]]
+let partitions = 17; // + 1
 
-var xaxis = view
+let xaxis = view
   .axis({
     axis: 1,
     width: 7,
@@ -69,7 +69,7 @@ var xaxis = view
     origin,
   });
 
-var zaxis = view.axis({
+let zaxis = view.axis({
     axis: 3,
     width: 7,
     end: true,
@@ -78,7 +78,7 @@ var zaxis = view.axis({
   });
 
 
-var grid = view.grid({
+let grid = view.grid({
     axes: 'xz',
     width: 2,  
     divideX: 20,
@@ -88,7 +88,7 @@ var grid = view.grid({
     origin,
   });
 
-var circle = view.interval({
+let circle = view.interval({
     channels: 3,
     items: 1,
     width: 64,
@@ -103,7 +103,7 @@ var circle = view.interval({
     stroke: 'dotted',
 })
 
-var blowupBoundary1 = view.interval({
+let blowupBoundary1 = view.interval({
     id: 'blowupBoundary1',
     channels: 3,
     items: 1,
@@ -119,7 +119,7 @@ var blowupBoundary1 = view.interval({
 })
 
 
-var blowupBoundary2 = view.interval({
+let blowupBoundary2 = view.interval({
     id: 'blowupBoundary2',
     channels: 3,
     items: 1,
@@ -135,7 +135,7 @@ var blowupBoundary2 = view.interval({
     stroke: 'dotted',
 })
 
-var affineGrid = view.interval({
+let affineGrid = view.interval({
     channels: 3,
     items: 2,
     width: partitions,
@@ -150,7 +150,7 @@ var affineGrid = view.interval({
     color: 'black',
 })
 
-var blowupGrid = view.interval({
+let blowupGrid = view.interval({
     id: 'blowupGrid',
     channels: 3,
     items: 2,
@@ -172,7 +172,7 @@ var blowupGrid = view.interval({
     ],
 })
 
-var projectiveLine = view.interval({
+let projectiveLine = view.interval({
     id: 'projectiveLine',
     channels: 3,
     items: 2,
@@ -188,7 +188,7 @@ var projectiveLine = view.interval({
     color: colors.y,
 })
 
-var projectiveIntersections = view.interval({
+let projectiveIntersections = view.interval({
     id: 'projectiveIntersections',
     channels: 3,
     items: 2,
@@ -209,7 +209,7 @@ var projectiveIntersections = view.interval({
     ],
 })
 
-var guidelines = view.interval({
+let guidelines = view.interval({
     id: 'guidelines',
     channels: 3,
     items: 2,
@@ -226,7 +226,7 @@ var guidelines = view.interval({
     color: 'black',
 })
 
-var guidelinePoints = view.interval({
+let guidelinePoints = view.interval({
     id: 'guidelinePoints',
     channels: 3,
     items: 2,
