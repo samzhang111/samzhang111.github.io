@@ -42,15 +42,15 @@
     var pointLeft = [];
     var pointRight = [];
 
-    const perim = 1;
-    const r = perim - 0.02
+    var perim = 1;
+    var r = perim - 0.02
 
 
 
     // jsxgraph
 
     JXG.Options.layer['polygon'] = 8;
-    const board = JXG.JSXGraph.initBoard('triangle1', {
+    var board = JXG.JSXGraph.initBoard('triangle1', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
         axis: true,
         pan: {
@@ -58,7 +58,7 @@
         }
     });
 
-    const board2 = JXG.JSXGraph.initBoard('triangle2', {
+    var board2 = JXG.JSXGraph.initBoard('triangle2', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
         axis: true,
         pan: {
