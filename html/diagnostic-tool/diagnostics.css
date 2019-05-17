@@ -1,0 +1,12 @@
+.univ-link {
+    display: inline-block;
+    text-decoration: underline;
+    color: #265301;
+    cursor: pointer;
+}
+
+/*
+.suspicious {
+    color: red;
+}
+*/
