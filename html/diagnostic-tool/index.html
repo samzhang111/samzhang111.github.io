@@ -4,6 +4,22 @@
         <link rel="stylesheet" type="text/css" href="./diagnostics.css" />
     </head>
     <body>
+        <div id="explanation">
+            In the below plot:
+
+            <ul>
+                <li>The square on the line is the number of tenure-track faculty from that given scrape.</li>
+                <li>The diamond above the line is the total number of people (not just tenure-track) parsed from that scrape. If you can't see a diamond, then they are smushed together.</li>
+                <li>The dashed black line is the number of people in the 2011 Census.</li>
+            </ul>
+
+            Clicking a data point will open that Wayback archive page.
+
+            <p>
+            The colors are coded by the department website.
+            <p>
+            For each scrape, we calculate how far it is from the 2011 scrape (we divide the scrape count by the census count, and say a scrape is "suspicious" if that proportion is greater than 2 or less than 0.5). We divide the number of suspicious scrapes by the total number of scrapes: that is the ratio displayed next to each university name.
+        </div>
         <div id="plot"></div>
         <div id="links"></div>
         <script src="./diagnostics-bundle.js"></script>

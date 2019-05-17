@@ -5,8 +5,10 @@
     cursor: pointer;
 }
 
-/*
+#explanation {
+    max-width: 600px;
+}
+
 .suspicious {
     color: red;
 }
-*/
