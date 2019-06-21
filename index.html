@@ -30,4 +30,22 @@ My hobbies include <a href="/2017/04/11/southern-poverty-law-center/">scraping</
 <a href="/images/long.jpg">long</a>
 <a href="/images/boop.jpg">dog</a> on <a href="/images/hike.jpg">adventures</a>.
 
+<div class="vertical-section"><h2>Recent blog posts</h2>
+    <ul>
+        {% for post in site.posts %}
+    {% capture postyear %} {{ post.date | date: '%Y' }} {% endcapture %}
+    {% assign postyear = postyear | plus: 0 %}
+
+    {% if postyear > 2016 %}
+    <li class="row">
+        <span class="date">{{ post.date | date_to_string }}</span>
+        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+
+    {% endif %}
+
+        {% endfor %}
+    </ul>
+</div>
+
 </div>
