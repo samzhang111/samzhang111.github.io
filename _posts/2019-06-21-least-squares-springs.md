@@ -11,7 +11,7 @@ Pretend your wooden board is the plane, and decide on a grid system. Then nail e
 
 Now imagine taking a long frictionless rod, and threading it through each of these loops. The equilibrium state it reaches is the line of best fit!
 
-I made an interactive demonstration of this, but it only works in full screen:
+I made an interactive demonstration of this, but it only works in full screen (click to open):
 
 <a href="/html/fullscreen/springs" style="outline:solid"><img src="/images/thumbnails/springs.png?raw=true" width="50%" alt="Screenshot of fullscreen springs app"/></a>
 
@@ -23,6 +23,6 @@ One can derive the optimality of the equilibrium state using the fact that the p
 
 Squaring is convex, and $Ax_i -y_i$ is affine. Composing convex functions with affine ones gives convex functions, and adding convex functions gives convex functions. So the whole loss function is convex. Hence the only minimum in this system is the unique global minimum. In other words, the resting point for the rod attached to the springs is the (unique) line of best fit. Hooray!
 
-The example was made using [plank.js](https://github.com/shakiba/planck.js), which is a nice javascript port of [Box2D](https://box2d.org), although it was sorely lacking in documentation. For instance, I couldn't find an easy way to run my demo outside of fullscreen.
+The example was made using [planck.js](https://github.com/shakiba/planck.js), which is a nice javascript port of [Box2D](https://box2d.org), although it was sorely lacking in documentation. For instance, I couldn't find an easy way to run my demo outside of fullscreen.
 
 This setup came from the book, [The Mathematical Mechanic](https://press.princeton.edu/titles/8861.html), which is full of perversities like this.
