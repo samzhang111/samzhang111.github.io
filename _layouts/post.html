@@ -6,6 +6,15 @@ layout: default
     <div class="title">{{ page.title }}</div>
     <div class="postdate">{{ page.date | date: "%B %-d, %Y" }}</div>
     <div class="content"> {{ content }} </div>
+
+    <hr>
+
+    <h2>Comments</h2>
+    <div id="commento"></div>
+    <script src="https://cdn.commento.io/js/commento.js"></script>
+
 </div>
+
+<hr>
 
 {% include footer.html %}
