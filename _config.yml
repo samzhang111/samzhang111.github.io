@@ -13,3 +13,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 url: "https://sam.zhang.fyi"
+future: true
