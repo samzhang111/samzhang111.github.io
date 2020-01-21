@@ -12,13 +12,13 @@ styles:
     - "/css/mathbox.css"
 ---
 
-[Catastrophe theory](https://en.wikipedia.org/wiki/Catastrophe_theory) is concerned with the way that a small change in a _continuous_ parameter can introduce a _discontinuous_ jump in observed phenomena.
+[Catastrophe theory](https://en.wikipedia.org/wiki/Catastrophe_theory) is a branch of bifurcation theory concerned with the way that a small change in a _continuous_ parameter of a potential function can introduce a _discontinuous_ jump in observed phenomena.
 
 To explore how this works, I've created an interactive "catastrophe machine". Imagine a wedge shaped like a parabola balancing on a table (see thick blue outline in left figure below). The parameter that we will alter continuously is its center of mass (green dot in figure; drag it around!), and the discontinuity comes in the wedge's equilibrium resting position. 
 
-Can you discover the catastrophe from playing with the figure? 
+Move the center of mass to the center-top of the parabola, within the dotted cusp (called the _bifurcation set_). Notice that two local minima emerge on the potential function. As the center of mass crosses the bifurcation set, one of the local minima disappear. If that was the one that the parabola was resting in, then the parabola undergoes a dramatic change in behavior: a "catastrophe" as it's been termed.
 
-Note that in the visualization, the line representing the _ground_ moves when the center of mass moves, rather than the parabola itself. The right hand figure is also interactive.
+Note that in the visualization, the line representing the _ground_ moves when the center of mass moves, rather than the parabola itself. I only drew the point corresponding to the global minimum - perhaps it would have been more accurate to include both. Also note that the right hand figure is interactive.
 
 <div style="display: flex; width: 600px; margin: 3px auto; justify-content:space-between">
 <div id="control" style="flex:0 1 auto;width:280px;height:300px;border: 3px solid black"></div>
@@ -27,11 +27,7 @@ Note that in the visualization, the line representing the _ground_ moves when th
 
 [Full screen version](/html/fullscreen/catastrophe). 
 
-The orange line in the left figure is the potential energy function for each x-axis point on the parabola, for that given center of mass. I did not truncate the potential energy function past the boundaries of the parabola, but of course those values are not meaningful to us. Also its y-axis is unitless -- the purpose is more to illustrate the topological aspect of the sublevel sets of the potential energy function. Notice the emergence of multiple local minima in the potential energy function once the center of mass enters this dotted cusp-shaped region at the top of the parabola (the cusp itself is called the _bifurcation set_ or _discriminant set_ of the derivative of the potential energy function, since it separates regions with different numbers of roots). Then, once the center of mass crosses the y-axis,
-one of these local minima overtakes the other in being the global minimum, causing a dramatic shift in the parabola's resting state.
+The right hand figure is the so-called _catastrophe surface_ for this machine. For each possible center of gravity $(x, y)$ in the parabola, we give it z-coordinates for the critical points of the energy function, in other words, the zeros of the derivative of the potential energy function. That turns out to be a cubic polynomial in this case. The roots of a cubic polynomial vary continuously with the coefficients, and there can be one, two, or three roots. The catastrophe occurs when
+the point must "jump" across the fold on the catastrophe surface.
 
-Let us consider the global structure of this potential energy function instead. For each possible center of gravity $(x, y)$ in the parabola, we associate to it the critical points of the energy function, in other words, the zeros of the derivative of the potential energy function. In other words, since the derivative of the potential energy function turns out to be a cubic polynomial in $x$ and $y$, we visualize it as an algebraic variety (right figure). This representation is known as the _catastrophe surface_.
-
-As the center of mass moves, a vertical green line moves in the $(x, y)$ plane, intersecting the catastrophe surface at each of the roots of the derivative of the potential energy function. Notice that as the center of mass crosses the bifurcation set, the number of intersections that this vertical green line has with the catastrophe surface changes.
-
-Two accessible introductions to the subject for anyone who has taken multivariable calculus are [Curves and Singularities](https://www.amazon.com/Curves-Singularities-Geometrical-Introduction-Singularity/dp/0521429994) by J.W. Bruce and P.J. Giblin; [Catastrophe Theory and its Applications](https://store.doverpublications.com/048669271x.html) by Tim Poston and Ian Stewart. Bruce and Giblin analyze this particular catastrophe in detail in Chapter 1, which they call the Poston catastrophe machine.
+Two accessible introductions to the subject for anyone who has taken multivariable calculus are [Curves and Singularities](https://www.amazon.com/Curves-Singularities-Geometrical-Introduction-Singularity/dp/0521429994) by J.W. Bruce and P.J. Giblin; [Catastrophe Theory and its Applications](https://store.doverpublications.com/048669271x.html) by Tim Poston and Ian Stewart. Bruce and Giblin analyze this particular catastrophe in detail in Chapter 1, which they call the Poston catastrophe machine. Catastrophe theory also serves as an interesting example of the difficulties of mathematical modeling of complex systems: see [this critique](http://faculty.washington.edu/etsb/402W12/materials/Zahler_Sussman_claims_and_accomplishments_of_applied_catastrophe_nature_77.pdf) for some of the historical debate around catastrophe theory's (over-)application to scientific questions. One of the general lessons here is that for applied mathematics to be useful for science, the practitioner must prioritize the scientific problem at hand, over any particular mathematical technique one is itching to apply. Nevertheless these models can be fascinating and with a critical eye, they are worth visiting -- many of them are discussed (and some criticized) in Poston and Stewart's book.
