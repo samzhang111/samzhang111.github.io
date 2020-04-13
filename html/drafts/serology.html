@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Serology tools</title>
+	</head>
+	<body>
+	    <table id="inputs1">
+		<tr class="row">
+		    <th class="label">Num. positive</th>
+		    <td>
+		    <input id="numpos" type="number" step=1 min=0 value=30 />
+		    </td>
+		</tr>
+
+		<tr class="row">
+		    <th class="label">Num. negative</th>
+		    <td>
+		    <input id="numneg" type="number" step=1 min=0 value=100 />
+		    </td>
+		</tr>
+
+		<tr class="row">
+		    <th class="label">Sensitivity</th>
+		    <td>
+		    <input id="sensitivity" type="number" step="0.01" min="0.01" max="0.99" value=0.9 />
+		    </td>
+		</tr>
+
+		<tr class="row">
+		    <th class="label">Specificity</th>
+		    <td>
+		    <input id="specificity" type="number" step="0.01" min="0.01" max="0.99" value=0.99 />
+		    </td>
+		</tr>
+	    </table>
+
+	    
+	    <div>Negative log posterior probability of seroprevalence</div>
+	    <div id="posteriorviz"></div>
+	    <div id="confintervals"></div>
+
+	    <script src="./serology-bundle.js"></script>
+	    <link rel="stylesheet" type="text/css" href="serology.css" />
+	</body>
+</html>
