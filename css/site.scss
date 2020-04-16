@@ -10,13 +10,20 @@ html {
     background-color: #f3f1ee;
 }
 
+
 .site {
+    font-family: 'Roboto Slab';
     width: 42em;
     margin: 3em auto;
+    font-size: 18px;
 
     li, ul {
         list-style-type: none;
     }
+
+  .collapsible-header {
+      background-color: #f3f1ee;
+  }
 }
 
 .homelink {
