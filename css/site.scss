@@ -17,8 +17,12 @@ html {
     margin: 3em auto;
     font-size: 18px;
 
-    li, ul {
-        list-style-type: none;
+    ul {
+        //list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 1em;
     }
 
   .collapsible-header {
