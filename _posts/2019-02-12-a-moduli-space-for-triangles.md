@@ -13,7 +13,11 @@ styles:
     - "/css/mathbox.css"
 ---
 
-This is a demonstration of the way that n-gons are naturally parameterized by the Grassmanian of 2-planes in $\mathbb{R}^n$. Since we are most comfortable with $\mathbb{R}^3$, this demo below uses triangles. 
+Charles Dodgson, [better known as Lewis Carroll](https://en.wikipedia.org/wiki/Lewis_Carroll), once posed the following mathematical question: what is the probability that a random triangle is obtuse?
+
+The answer he gave was incorrect, and several subsequent attempts to correct the answer also fell short. In a [2017 paper from Jason Canterella, Tom Needham, Clayton Shonkwiler, and Gavin Stewart](https://arxiv.org/abs/1702.01027), a nice resolution is presented to this problem. 
+
+The key issue with Dodgson's original solution was that in order to say what probability a random triangle is obtuse, he had to first come up with a space that triangles lived in, and find what part of that space corresponded to obtuse triangles. This turns out to be a subtle issue. Canterella et al. solve this by associating each n-gons with a so-called Grassmanian of 2-planes in $\mathbb{R}^n$. This blog post is a demonstration of their parameterization, omitting all of the details :), using triangles and $\mathbb{R}^3$. 
 
 In short, there is a way to send any n-gon with a fixed perimeter to a pair of orthonormal vectors in $\mathbb{R^n}$ up to translation (technically, $2^n$ pairs, but they are all identified with each other). The space of all pairs of orthonormal vectors is a [Stiefel manifold](https://en.wikipedia.org/wiki/Stiefel_manifold), and that is the space we would operate in if we cared about the orientation (as in rotations) of the polygon. But what if we don't care about the orientation? It turns out we get lucky and rotating the polygon sends these pairs of orthonormal vectors to the same spanning
 plane. Hence why the Grassmannian of 2-planes serves as the moduli space for polygons when we don't care about rotations.
@@ -36,4 +40,4 @@ The yellow line connecting the two distinguished representatives is a geodesic. 
 
 You can move the vertices of the triangles around in the middle two panes and watch it move in the moduli space. I normalize the perimeters and make some arbitrary choices when it comes to orientation.
 
-I heard about this from [Rob Hines](http://math.colorado.edu/~rohi1040), who cites [a paper from Jason Canterella, Tom Needham, Clayton Shonkwiler, and Gavin Stewart](https://arxiv.org/abs/1702.01027). There is some interesting historical backstory to this moduli space. Lewis Carroll posed the question: what is the probability that a random triangle is obtuse? It is not so easy to answer that question without a probability space from which to draw a random triangle. This moduli space helps answer that question.
+Hat tip to [Rob Hines](http://math.colorado.edu/~rohi1040), who first told me about this.
