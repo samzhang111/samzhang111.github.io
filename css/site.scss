@@ -10,12 +10,34 @@ html {
     background-color: #f3f1ee;
 }
 
+.name {
+    font-size: 1.3em;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.column {
+    flex: 1;
+    margin: 0 0.5em;
+}
+
+.container {
+    @media (min-width: 1025px) {
+        max-width: 1025px !important;
+    }
+}
 
 .site {
     font-family: 'Roboto Slab';
-    width: 42em;
     margin: 3em auto;
     font-size: 18px;
+
 
     ul {
         //list-style-type: none;
