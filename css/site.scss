@@ -19,10 +19,13 @@ h1, h2, h3, .nametitle, .homelink, .title, .postdate {
     font-size: 1.3em;
 }
 
-#headshot {
-    width: min(300px, 90%);
+#images {
     float: right;
-    margin: 0.5em 0 0 0.5em;
+    margin: 0.5em;
+    img {
+        width: min(320px, 90%);
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -30,7 +33,7 @@ h1, h2, h3, .nametitle, .homelink, .title, .postdate {
         clear: both;
     }
 
-    #headshot {
+    #images {
         float: none;
     }
 }
