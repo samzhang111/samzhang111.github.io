@@ -5,29 +5,25 @@ redirect_from: "/html/about/"
 
 <div class="site">
 
-<div class="two-column">
-    <div class="column">
-        <div class="name">Sam Zhang's Homepage</div>
+        <div class="nametitle">Sam Zhang's Homepage</div>
 
-        <p>
-        I am a PhD student and NSF Graduate Research Fellow in the Department of Applied Mathematics at the University of Colorado at Boulder. My advisor is <a href="http://tuvalu.santafe.edu/~aaronc/">Aaron Clauset</a>.
+        <img id="headshot" src="/images/me.jpeg" />
 
-    </div>
+        <div class="intro">
+            <p>
+            I am a PhD student and NSF Graduate Research Fellow in the Department of Applied Mathematics at the University of Colorado at Boulder. My advisor is <a href="http://tuvalu.santafe.edu/~aaronc/">Aaron Clauset</a>.
 
-    <div class="column">
-        <img width="300px" style="float: right;" src="/images/me.jpeg" />
-    </div>
-</div>
 
-        <p>
-I received my undergraduate degree in Computer Science and Psychology from Swarthmore College in 2014. I was a 2014 <a href="https://dssgfellowship.org/">University of Chicago Data Science for Social Good Fellow</a>. Then I worked as a software engineer at companies such as <a href="https://opencounter.com/">OpenCounter</a> and <a href="https://pivotal.io/labs">Pivotal Labs</a>.
-<p>
+            <p>
+    I received my undergraduate degree in Computer Science and Psychology from Swarthmore College in 2014. I was a 2014 <a href="https://dssgfellowship.org/">University of Chicago Data Science for Social Good Fellow</a>. Then I worked as a software engineer at companies such as <a href="https://opencounter.com/">OpenCounter</a> and <a href="https://pivotal.io/labs">Pivotal Labs</a>.
+    <p>
 
-My hobbies include <a href="/2018/12/26/ascii-plotting/">making</a> <a href="/2018/12/18/cats-on-ladders/">interactive</a> <a href="/2019/02/12/a-moduli-space-for-triangles/">mathematical</a> <a href="/2019/01/10/voronoize-this-page/">toys</a> (see thumbnails or blog posts below) and taking <a href="/images/tulia2.jpg">my</a> <a href="/images/long.jpg">long</a> <a href="/images/boop.jpg">dog</a> on <a href="/images/hike.jpg">adventures</a>, and as of late, biking.
+    My hobbies include <a href="/2018/12/26/ascii-plotting/">making</a> <a href="/2018/12/18/cats-on-ladders/">interactive</a> <a href="/2019/02/12/a-moduli-space-for-triangles/">mathematical</a> <a href="/2019/01/10/voronoize-this-page/">toys</a> (see thumbnails or blog posts below) and taking <a href="/images/tulia2.jpg">my</a> <a href="/images/long.jpg">long</a> <a href="/images/boop.jpg">dog</a> on <a href="/images/hike.jpg">adventures</a>, and as of late, biking.
 
-<p>
+    <p>
 
-Pronouns: he/him.
+    Pronouns: he/him.
+        </div>
 
 <div class="gallery" content>
     <div class="section">
@@ -82,7 +78,7 @@ Pronouns: he/him.
 <div class="vertical-section">
     <ul class="collapsible popout">
       <li class="active">
-          <h2 class="collapsible-header">Updates</h2>
+          <div class="collapsible-header nametitle">Updates</div>
           <div class="collapsible-body">
           <ul>
               <li> <b>(September, 2020)</b> I passed two of my preliminary exams. One left to go!</li>
@@ -98,13 +94,13 @@ Pronouns: he/him.
       </li>
 
       <li>
-        <h2 class="collapsible-header">Blog posts</h2>
+        <div class="collapsible-header nametitle">Blog posts</div>
         <div class="collapsible-body">
             <ul>
             {% for post in site.posts %}
 
             <li class="row">
-                <span class="date">{{ post.date | date_to_string }}</span>
+                <span class="date">({{ post.date | date: "%B, %Y" }})</span>
                 <a class="title" href="{{ post.url }}">{{ post.title }}</a>
             </li>
 

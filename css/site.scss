@@ -2,29 +2,37 @@
 ---
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 html {
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto';
     font-size: 18px;
     color: #333;
     background-color: #f3f1ee;
 }
 
-.name {
+h1, h2, h3, .nametitle, .homelink, .title, .postdate {
+    font-family: 'Roboto Slab';
+}
+
+.nametitle {
     font-size: 1.3em;
 }
 
-.two-column {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 100%;
+#headshot {
+    width: min(300px, 90%);
+    float: right;
+    margin: 0.5em 0 0 0.5em;
 }
 
-.column {
-    flex: 1;
-    margin: 0 0.5em;
+@media (max-width: 480px) {
+    .intro {
+        clear: both;
+    }
+
+    #headshot {
+        float: none;
+    }
 }
 
 .container {
@@ -34,8 +42,8 @@ html {
 }
 
 .site {
-    font-family: 'Roboto Slab';
-    margin: 3em auto;
+    font-family: 'Roboto';
+    margin: 3em auto !important;
     font-size: 18px;
 
 
@@ -81,21 +89,19 @@ html {
 }
 
 .row {
-  display: flex;
   margin-bottom: 0.3rem;
 }
 
 .date {
   min-width: 7rem;
+  margin-right: 0.5em;
+  font-weight: bold;
 }
 
 .tag {
   min-width: 5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.title {
 }
 
 .gallery {
