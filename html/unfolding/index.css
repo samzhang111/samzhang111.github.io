@@ -1,0 +1,15 @@
+#cubecontrols2d, #cubecontrols3d {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+}
+
+#3d {
+    margin-top: 2em;
+}
+
+#cube2d, #cube3d {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+}

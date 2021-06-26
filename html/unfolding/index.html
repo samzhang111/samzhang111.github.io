@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cube unfolding</title>
+        <link href="index.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script defer src="main.js"></script></head>
+    <body>
+
+        <div class="container" id="2d">
+            <h3>Unfold a 2d cube!</h3>
+            <div>Finally! We've all been waiting months to do this! Todo: show the actual cube unfolding. And animate it!! (Click the nodes to make the move permanent)</div>
+            <div id="cubecontrols2d"></div>
+            <canvas id="cube2d" width="1000", height="1000"></canvas>
+        </div>
+
+        <div class="container" id="3d">
+            <h3>Warning: the 3d one doesn't work yet!</h3>
+            <div>There is some weird offset issue moving in the negative directions, and also the isometric library doesn't properly do depth. It is easy to stack blocks such that it is hard to see without rotating the camera too. And there is lag if you play with this long enough. Todo: switch over to an actual 3d library instead of this isometric thing :(.</div>
+            <div id="cubecontrols3d"></div>
+            <canvas id="cube3d" width="1000", height="1000"></canvas>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+    
+</html>
