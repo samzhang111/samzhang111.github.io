@@ -9,15 +9,15 @@
     <body>
 
         <div class="container" id="2d">
-            <h3>Unfold a 3d cube!</h3>
-            <div>Finally! We've all been waiting months to do this! Todo: show the actual cube unfolding. And animate it!! (Click the nodes to make the move permanent)</div>
+            <h3>Ridge unfoldings of a 3d cube!</h3>
+            <div>Here we see the shadows of a cube as we perform a "ridge unfolding". The graph to the left controls the unfolding, and on the right, we see the "stamp" left behind by the cube as it unfolds. Notice that each face of a 3d cube is a "2d cube" (or square). <b>Todo: implement an actual 3d cube unfolding</b></div>
             <div id="cubecontrols2d"></div>
             <canvas id="cube2d" width="1000", height="1000"></canvas>
         </div>
 
         <div class="container" id="3d">
-            <h3>Unfolding a 4d cube! (Warning: this one doesn't work yet)</h3>
-            <div>There is some weird offset issue moving in the negative directions, and also the isometric library doesn't properly do depth. It is easy to stack blocks such that it is hard to see without rotating the camera too. And there is lag if you play with this long enough. Todo: switch over to an actual 3d library instead of this isometric thing :(.</div>
+            <h3>Ridge unfoldings of a 4d cube</h3>
+            <div>Here we see the shadows of a 4-dimensional cube during a ridge unfolding. This is exactly like the case above, except now the faces of the 4d cube are 3d cubes, so the unfolded structure consists of connected cubes.</div>
             <div id="cubecontrols3d"></div>
             <canvas id="cube3d" width="1000", height="1000"></canvas>
         </div>
