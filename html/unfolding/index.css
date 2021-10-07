@@ -1,23 +1,55 @@
-#cubecontrols3d {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+.reset-button {
+    margin: 1em auto;
 }
 
-#3d {
-    margin-top: 2em;
+#shape-selectors {
+    margin: 0 0 1em 0;
 }
 
-#cube3d {
+#unfolding-parent {
+    display: flex;
+    border-radius: 5% 5% 5% 50%;
+    border: 3px solid;
+    margin: 1em 0;
+    min-height: 750px;
+}
+
+#unfolding-controls {
+    flex: 0 1 auto;
+    padding: 3em 2em 0 4em;
+    border-right: 3px solid;
+}
+
+#unfolding-viz {
+    flex: 0 1 auto;
+    padding: 2em 2em 2em 2em;
+}
+
+#controls {
+    width: 500px;
+    height: 500px;
+    margin-right: 1em;
+}
+
+#vizcontainer {
+    height: 600px;
+}
+
+#viz {
     width: 100%;
     height: 100%;
-    display: inline-block;
 }
 
-.tall-vw {
-    height: 70vh;
+.instructions {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.tall {
-    height: 100%;
+.subinstructions {
+    font-size: 14px;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 2em;
 }

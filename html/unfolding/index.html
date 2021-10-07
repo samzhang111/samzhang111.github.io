@@ -4,49 +4,39 @@
         <meta charset="utf-8" />
         <title>Cube unfolding</title>
         <link href="index.css" rel="stylesheet"></link>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script defer src="main.43d175e77706ac9aca43.js"></script></head>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="main.2f23b9a3b4acb8c5fde0.js"></script></head>
     <body>
 
         <div class="container" id="3d">
-            <h1>Unfoldings</h1>
-            <div class="col s12">
-                <ul class="tabs">
-                    <li class="tab col s6"><a href="#cube_tab" class="active">Cube</a></li>
-                    <li class="tab col s6"><a href="#simplex_tab">Simplex</a></li>
-                </ul>
+            <h1>4D Unfoldings</h1>
+            <div class="instructions">By <a href="https://sam.zhang.fyi">Sam Zhang</a>, <a href="https://www.mcs.uvawise.edu/msh3e/">Matt Harvey</a>, and <a href="https://satyandevadoss.org/">Satyan Devadoss</a></div>
+            <div id="unfolding-parent">
+
+                    <div id="unfolding-controls">
+            <div id="shape-selectors">
+                <a id="select-cube" class="waves-effect waves-light btn-small shape-selector blue">Cube</a>
+                <a id="select-simplex" class="waves-effect waves-light btn-small shape-selector">Simplex</a>
+                <a id="select-orthoplex" class="waves-effect waves-light btn-small shape-selector">Orthoplex</a>
             </div>
 
-            <div class="row">
-                <div id="cube_tab" >
-                    <div class="col s3 card-panel teal lighten-5 tall-vw">
-                        <h3>4d cube</h3>
-                        <div>Unfold the 4d cube by clicking on nodes on its Roberts graph. Your current position is the blue node. You can unfold in the direction of red and dark red nodes.</div>
-                        <div id="cubecontrols3d"></div>
+                        <div class="instructions">Click green nodes to unfold</div>
+                        <div class="subinstructions">Green nodes can be visited, red nodes cannot. Nodes that have already been visited are slightly darker green and red.</div>
+                        <div id="controls" class="control-graph"></div>
                     </div>
-                    <div class="col s9">
-                        <div id="cube3dcontainer" class="tall-vw">
-                            <canvas id="cube3d"></canvas>
-                        </div>
-                    </div>
-                </div>
 
-                <div id="simplex_tab" >
-                    <div class="col s3 card-panel teal lighten-5 tall-vw">
-                        <h3>4d simplex</h3>
-                        <div>TODO</div>
-                        <div id="simplexcontrols3d"></div>
-                    </div>
-                    <div class="col s9">
-                        <div id="simplex3dcontainer" class="tall-vw">
-                            <canvas id="simplex3d"></canvas>
+                    <div id="unfolding-viz">
+                        <a class="waves-effect waves-light btn-small reset-button"><i class="material-icons left">autorenew</i>Reset</a>
+                        <div id="vizcontainer">
+                            <canvas id="viz"></canvas>
                         </div>
+                        <div class="instructions right">Drag to rotate</div>
                     </div>
-                </div>
             </div>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
     
 </html>
