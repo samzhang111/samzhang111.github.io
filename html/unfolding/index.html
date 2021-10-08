@@ -2,37 +2,51 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>4D Unfoldings</title>
+        <title>Unfolding Polytopes</title>
         <link href="index.css" rel="stylesheet"></link>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script defer src="main.1a40eb6850947099dff0.js"></script></head>
+    <script defer src="main.c78ff3d27ab3cd15afd2.js"></script></head>
     <body>
 
-        <div class="container" id="3d">
-            <h1>4D Unfoldings</h1>
-            <div class="instructions">By <a href="https://sam.zhang.fyi">Sam Zhang</a>, <a href="https://www.mcs.uvawise.edu/msh3e/">Matt Harvey</a>, and <a href="https://satyandevadoss.org/">Satyan Devadoss</a></div>
+        <div id="3d">
             <div id="unfolding-parent">
 
                     <div id="unfolding-controls">
-            <div id="shape-selectors">
-                <a id="select-cube" class="waves-effect waves-light btn-small shape-selector blue">Cube</a>
-                <a id="select-simplex" class="waves-effect waves-light btn-small shape-selector">Simplex</a>
-                <a id="select-orthoplex" class="waves-effect waves-light btn-small shape-selector">Orthoplex</a>
+            <h2>Unfolding Polytopes</h2>
+            <div class="instructions">By <a href="https://sam.zhang.fyi">Sam Zhang</a> with <a href="https://www.mcs.uvawise.edu/msh3e/">Matt Harvey</a> and <a href="https://satyandevadoss.org/">Satyan Devadoss</a></div>
+
+            <hr />
+                        <div class="subinstructions">
+                            Intuitively, we all know how to unfold a three-dimensional polytope. Cut along its edges, and then lay the faces flat in two-dimensional space. 
+                            When the faces don't overlap in the plane, we call the resulting pattern a <a href="https://en.wikipedia.org/wiki/Net_(polyhedron)">net</a>. 
+                        </div>
+                        <div class="subinstructions">
+                            We can do this with four-dimensional polytopes as well. The generalization of an edge is called a "ridge", and the resulting "ridge unfolding" produces a beautiful footprint in three-dimensional space.
+                            In four dimensions, <a href="https://static1.squarespace.com/static/53f62f0fe4b0a7a51b059df3/t/5fd66934dca221526042c6ec/1607887158026/cube-net-EJC.pdf">the cube</a>, simplex, and orthoplex all unfold into nets.
+                        </div>
+            <hr />
+            <div id="control-buttons">
+                <div id="shape-selectors">
+                    <a id="select-cube" class="waves-effect waves-light btn-small shape-selector blue">Cube</a>
+                    <a id="select-simplex" class="waves-effect waves-light btn-small shape-selector">Simplex</a>
+                    <a id="select-orthoplex" class="waves-effect waves-light btn-small shape-selector">Orthoplex</a>
+                </div>
+                <a class="waves-effect waves-light btn-small reset-button red">Reset</a>
             </div>
 
-                        <div class="instructions">Click green nodes to unfold</div>
-                        <div class="subinstructions">Green nodes can be visited, red nodes cannot. Nodes that have already been visited are slightly darker green and red.</div>
                         <div id="controls" class="control-graph"></div>
+
+                        <div id="controlinstructions">
+                        <div class="subinstructions">Blue nodes can be visited, red nodes cannot.</div><div class="subinstructions">Nodes that have already been visited are slightly darker blue and red.</div>
+                        </div>
                     </div>
 
                     <div id="unfolding-viz">
-                        <a class="waves-effect waves-light btn-small reset-button"><i class="material-icons left">autorenew</i>Reset</a>
                         <div id="vizcontainer">
                             <canvas id="viz"></canvas>
                         </div>
-                        <div class="instructions right">Drag to rotate</div>
+                        <div class="subinstructions right">drag to rotate; scroll to zoom</div>
                     </div>
             </div>
         </div>

@@ -1,29 +1,44 @@
-.reset-button {
-    margin: 1em auto;
+#control-buttons {
+    margin: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 #shape-selectors {
-    margin: 0 0 1em 0;
+    flex: 0 1 auto;
 }
+
+.reset-button {
+    flex: 0 1 auto;
+    margin: 3px;
+}
+
+.shape-selector {
+    margin: 3px 0 0 3px;
+}
+
 
 #unfolding-parent {
     display: flex;
-    border-radius: 5% 5% 5% 50%;
-    border: 3px solid;
-    margin: 1em 0;
-    min-height: 750px;
     min-width: 700px;
 }
 
 #unfolding-controls {
-    flex: 0 1 auto;
-    padding: 3em 2em 0 4em;
-    border-right: 3px solid;
+    padding: 0 2em 2em 2em;
+    border-right: 2px solid;
 }
 
 #unfolding-viz {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     padding: 2em 2em 2em 2em;
+    height: 100vh;
+}
+
+#controlinstructions {
+    text-align: center;
+}
+
+#controls {
 }
 
 @media screen and (min-width: 1024px) {
@@ -31,11 +46,14 @@
         width: 500px;
         height: 500px;
         margin-right: 1em;
+        margin-bottom: 1em;
     }
 
     #viz {
-        width: 600px;
-        height: 600px;
+    }
+
+    #unfolding-controls {
+        flex: 0 0 45em;
     }
 }
 
@@ -44,17 +62,20 @@
         width: 300px;
         height: 300px;
         margin-right: 1em;
+        margin-bottom: 1em;
     }
 
     #viz {
-        width: 300px;
-        height: 300px;
+    }
+
+    #unfolding-controls {
+        flex: 0 0 25em;
     }
 }
 
 
 #vizcontainer {
-    height: 600px;
+    height: 100%;
 }
 
 .instructions {
@@ -64,9 +85,4 @@
 
 .subinstructions {
     font-size: 14px;
-}
-
-.right {
-    margin-left: auto;
-    margin-right: 2em;
 }
