@@ -7,16 +7,16 @@ scripts:
     - "/scripts/mathbox-bundle.min.js"
     - "/scripts/jsxgraphcore-0.99.7.js"
     - "/scripts/chroma.min.js"
-    - "/scripts/curveshortening.js"
+    - "/scripts/curve-shortening.bundle.js"
 styles:
     - "/css/jsxgraph-0.99.7.css"
     - "/css/mathbox.css"
 ---
 
 
-<div style="display: flex; width: 600px; margin: 3px auto; justify-content:space-between">
-<div id="control" style="flex:0 1 auto;width:300px;height:300px;border: 3px solid black"></div>
-<div id="curve-2d" style="flex:0 1 auto;width:300px;height:300px;border: none;"></div>
+<div style="display: flex; width: 1020px; margin: 2em 0; justify-content:space-between; border: 3px solid black; border-radius: 30px">
+<div id="control" style="flex:0 1 auto;width: 500px;height:500px;border-right: 3px solid black"></div>
+<div id="curve-2d" style="flex:0 1 auto;width: 500px;height:500px;border: none;"></div>
 </div>
 
 [Full screen version](/html/fullscreen/curve-shortening). 

@@ -15,7 +15,10 @@ scripts:
 <span id="measure"></span>
 </div>
 <div>
+<div class="input-field text-darken-2">
 <input id="equation" type="text" placeholder="y^2 - x*(x - 1)*(x + 1)">
+<label for="equation">0 = f(x, y) = </label>
+</div>
 <span id="error"></span>
 </div>
 
@@ -60,6 +63,10 @@ Source code is [here](https://github.com/samzhang111/marchingcubes-ascii).
 
     #error{
         color: red;
+    }
+
+    input::placeholder {
+        color: black !important;
     }
 </style>
 

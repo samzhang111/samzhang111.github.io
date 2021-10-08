@@ -20,4 +20,4 @@ And here is [arxiv.org](https://arxiv.org) voronoized:
 
 Again, the code for this is available on Github [here](https://github.com/samzhang111/html-voronoi).
 
-**Edit**: Thanks to [Matthew Kay](https://twitter.com/mjskay/status/108540791227989605) for pointing out to me that using Voronoi diagrams to augment cursor behavior is known in the literature as [bubble cursor](http://www.dgp.toronto.edu/~tovi/BubbleCursor).
+**Edit**: Thanks to [Matthew Kay](https://twitter.com/mjskay/status/1085407912279896065) for pointing out to me that using Voronoi diagrams to augment cursor behavior is known in the literature as [bubble cursor](http://www.dgp.toronto.edu/~tovi/BubbleCursor).
