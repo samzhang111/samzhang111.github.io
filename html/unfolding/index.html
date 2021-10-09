@@ -6,24 +6,20 @@
         <link href="index.css" rel="stylesheet"></link>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script defer src="main.2cb8ed3bea49d9994188.js"></script></head>
+    <script defer src="main.15493f757c9a40d5ab7f.js"></script></head>
     <body>
 
         <div id="3d">
             <div id="unfolding-parent">
 
                     <div id="unfolding-controls">
-            <h2>Unfolding Polytopes</h2>
-            <div class="instructions">By <a href="https://sam.zhang.fyi">Sam Zhang</a> with <a href="https://www.mcs.uvawise.edu/msh3e/">Matt Harvey</a> and <a href="https://satyandevadoss.org/">Satyan Devadoss</a></div>
+            <h2>Ridge Unfolding Polytopes</h2>
+            <div class="instructions">By <a href="https://sam.zhang.fyi" target="_blank">Sam Zhang</a> with <a href="https://www.mcs.uvawise.edu/msh3e/" target="_blank">Matt Harvey</a> and <a href="https://satyandevadoss.org/" target="blank">Satyan Devadoss</a></div>
 
             <hr />
                         <div class="subinstructions">
-                            Intuitively, we all know how to unfold a three-dimensional polytope. Cut along its edges, and then lay the faces flat in two-dimensional space. 
-                            When the faces don't overlap in the plane, we call the resulting pattern a <a href="https://en.wikipedia.org/wiki/Net_(polyhedron)">net</a>. 
-                        </div>
-                        <div class="subinstructions">
-                            We can do this with four-dimensional polytopes as well. The generalization of an edge is called a "ridge", and the resulting "ridge unfolding" produces a beautiful footprint in three-dimensional space.
-                            In four dimensions, <a href="https://static1.squarespace.com/static/53f62f0fe4b0a7a51b059df3/t/5fd66934dca221526042c6ec/1607887158026/cube-net-EJC.pdf">the cube</a>, simplex, and orthoplex all unfold into nets.
+                            We can unfold a 3D polyhedron by cutting along its edges and laying its connected faces on the 2D plane.  When faces do not overlap, the result is called a <a href="https://en.wikipedia.org/wiki/Net_(polyhedron)" target="blank">net</a>.
+                            Similarly, a 4D polytope can be unfolded into 3D space by cutting along its ridges. Beautifully, all unfoldings of the <a href="https://static1.squarespace.com/static/53f62f0fe4b0a7a51b059df3/t/5fd66934dca221526042c6ec/1607887158026/cube-net-EJC.pdf" target="blank">4-cube</a>, 4-simplex, and 4-orthoplex are nets.
                         </div>
             <hr />
             <div id="control-buttons">
@@ -38,7 +34,7 @@
                         <div id="controls" class="control-graph"></div>
 
                         <div id="controlinstructions">
-                        <div class="subinstructions">Blue nodes can be visited, red nodes cannot.</div><div class="subinstructions">Nodes that have already been visited are slightly darker blue and red.</div>
+                        <div class="subinstructions">Blue nodes can be visited, red nodes cannot. Visited nodes are slightly darker.</div>
                         </div>
                     </div>
 
@@ -46,7 +42,7 @@
                         <div id="vizcontainer">
                             <canvas id="viz"></canvas>
                         </div>
-                        <div class="subinstructions right">drag to rotate; scroll to zoom</div>
+                        <div id="dragtorotatetext" class="subinstructions right">Drag to rotate. Scroll to zoom.</div>
                     </div>
             </div>
         </div>

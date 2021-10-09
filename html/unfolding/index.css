@@ -20,18 +20,24 @@
 
 #unfolding-parent {
     display: flex;
-    min-width: 700px;
+    min-width: 800px;
 }
 
 #unfolding-controls {
-    padding: 0 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em 1em 2em;
     border-right: 2px solid;
+    height: 100vh;
+    min-height: 800px;
 }
 
 #unfolding-viz {
     flex: 1 1 auto;
-    padding: 2em 2em 2em 2em;
+    padding: 2em 2em 2.5em 2em;
     height: 100vh;
+    min-height: 800px;
 }
 
 #controlinstructions {
@@ -39,14 +45,14 @@
 }
 
 #controls {
+    margin: auto;
+    align-self: center;
 }
 
 @media screen and (min-width: 1024px) {
     #controls {
         width: 500px;
         height: 500px;
-        margin-right: 1em;
-        margin-bottom: 1em;
     }
 
     #viz {
@@ -61,8 +67,6 @@
     #controls {
         width: 300px;
         height: 300px;
-        margin-right: 1em;
-        margin-bottom: 1em;
     }
 
     #viz {
