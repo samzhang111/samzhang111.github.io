@@ -122,7 +122,7 @@
     // jsxgraph
 
     JXG.Options.layer['polygon'] = 8;
-    const board = JXG.JSXGraph.initBoard('control', {
+    const board = JXG.JSXGraph.initBoard('catastrophe-control', {
         boundingbox: [-xmax, ymax, xmax, -ymax],
         axis: true,
         pan: {

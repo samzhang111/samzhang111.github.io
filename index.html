@@ -1,18 +1,10 @@
 ---
 layout: default
-redirect_from: "/html/about/"
 ---
-
-
-<div class="site">
 
         <div class="nametitle">Sam Zhang's Homepage</div>
 
-        <span id="images">
-            <img id="headshot" src="/images/me.jpeg" />
-            <img alt="my email is shimian dot my last name at gmail.com" src="/images/email.png" />
-            <div>Pronouns: he/him.</div>
-        </span>
+        <div id="intro-container">
 
         <div class="intro">
             <p>
@@ -25,71 +17,92 @@ redirect_from: "/html/about/"
             I also love making mathematical visualizations, many of which are on display below.
 
             <p>
-            I was a 2014 <a href="https://dssgfellowship.org/">Eric & Wendy Schmidt Data Science for Social Good Fellow</a> at the University of Chicago (now at CMU), and a lead project scoper for the <a href="https://www.solveforgood.org">2020 Solve for Good Summer</a>. 
-            Additionally, prior to my PhD, I worked as a professional software engineer at the consultancy formerly known as <a href="https://pivotal.io/labs">Pivotal Labs</a> and the Code for America startup <a href="https://opencounter.com/">OpenCounter</a>.
-            I received my undergraduate degree in Computer Science and Psychology from Swarthmore College in 2014.
-    <p>
-    I am proud to be organizing for the future of public higher education in Colorado with our wall-to-wall university labor union, <a href="https://ucwcolorado.org">United Campus Workers - CWA Local 7799</a>.
-    My hobbies include taking <a href="/images/tulia2.jpg">my</a> <a href="/images/long.jpg">long</a> <a href="/images/boop.jpg">dog</a> on <a href="/images/hike.jpg">adventures</a>, and as of late, biking. 
+
+            <a href="/html/about/">More about me here.</a>
 
         </div>
 
-<div class="gallery" content>
-    <div class="section">
-        <a href="{% post_url 2020-10-29-curve-shortening %}">
-            <img alt="Curve shortening" class="thumbnail" src="/images/thumbnails/shortening.png" />
-        </a>
-        <a href="{% post_url 2018-12-26-ascii-plotting %}">
-            <img alt="ASCII function plotting" class="thumbnail" src="/images/thumbnails/asciiplot.png" />
-        </a>
-        <a href="{% post_url 2019-02-12-a-moduli-space-for-triangles %}">
-            <img alt="Moduli space of triangles" class="thumbnail" src="/images/thumbnails/moduli-triangles.png" />
-        </a>
-        <a href="{% post_url 2019-01-10-voronoize-this-page %}">
-            <img alt="The Voronoizer" class="thumbnail" src="/images/thumbnails/voronoize.png" />
-        </a>
-        <a href="{% post_url 2020-01-20-catastrophe-machine %}">
-            <img alt="A catastrophe machine" class="thumbnail" src="/images/thumbnails/catastrophe.png" />
-        </a>
-        <a href="{% post_url 2019-01-09-treasure-hunting %}">
-            <img alt="Treasure hunting" class="thumbnail" src="/images/thumbnails/treasure.png" />
-        </a>
+        <span id="images">
+            <img id="headshot" src="/images/me.jpeg" />
+            <img alt="my email is shimian dot my last name at gmail.com" src="/images/email.png" />
+            <div>Pronouns: he/him.</div>
+        </span>
 
-        <a href="{% post_url 2019-01-11-voronoi-bookmarklet %}">
-            <img alt="Voronoizer Bookmarklet" class="thumbnail" src="/images/thumbnails/voronoize-bookmarklet.png" />
-        </a>
+        </div>
 
-        <a href="{% post_url 2018-12-19-hypocycloids %}">
-            <img alt="Hypocycloids" class="thumbnail" src="/images/thumbnails/hypocycloids.png" />
-        </a>
+<div id="visualizations" class="vertical-section">
+    <div class="sectitle">Visualizations</div>
+    <div>
+        Check out this recent visualization I made with Matt Harvey and Satyan Devadoss, on the ridge unfoldings of different four-dimensional polytopes!
+        <p>
 
-        <a href="{% post_url 2019-06-21-least-squares-springs %}">
-            <img alt="Least squares as springs" class="thumbnail" src="/images/thumbnails/springs.png" />
-        </a>
-
-        <a href="{% post_url 2018-12-18-cats-on-ladders %}">
-            <img alt="Cats on Ladders" class="thumbnail" src="/images/thumbnails/cats.png" />
-        </a>
-
-        <a href="{% post_url 2018-10-28-convex-hull-circles %}">
-            <img alt="A bound due to Elekes" class="thumbnail" src="/images/thumbnails/elekes.png" />
-        </a>
-        <a href="{% post_url 2019-01-26-cylinder-ellipse %}">
-            <img alt="Cross-section of a cylinder" class="thumbnail" src="/images/thumbnails/cylinder.png" />
-        </a>
-        <a href="{% post_url 2018-01-22-usecode-search %}">
-            <img alt="Use code t-sne" class="thumbnail" src="/images/thumbnails/usecode-tsne.png" />
+        <a href="/html/unfolding/index.html">
+            <img class="featured" alt="Unfolding page screenshot" src="/images/unfolding.png" />
         </a>
     </div>
-</div>
 
-<div class="vertical-section">
-    <ul class="collapsible popout">
-      <li class="active">
-          <div class="collapsible-header nametitle">Updates</div>
-          <div class="collapsible-body">
+    <div class="gallery" content>
+        More visualizations are available below:
+        <div class="section">
+            <a href="/html/unfolding/index.html">
+                <img alt="Unfolding polytopes" class="thumbnail" src="/images/thumbnails/unfolding.jpg" />
+            </a>
+            <a href="{% post_url 2020-10-29-curve-shortening %}">
+                <img alt="Curve shortening" class="thumbnail" src="/images/thumbnails/shortening.png" />
+            </a>
+            <a href="{% post_url 2018-12-26-ascii-plotting %}">
+                <img alt="ASCII function plotting" class="thumbnail" src="/images/thumbnails/asciiplot.png" />
+            </a>
+            <a href="{% post_url 2019-02-12-a-moduli-space-for-triangles %}">
+                <img alt="Moduli space of triangles" class="thumbnail" src="/images/thumbnails/moduli-triangles.png" />
+            </a>
+            <a href="{% post_url 2019-01-10-voronoize-this-page %}">
+                <img alt="The Voronoizer" class="thumbnail" src="/images/thumbnails/voronoize.png" />
+            </a>
+            <a href="{% post_url 2020-01-20-catastrophe-machine %}">
+                <img alt="A catastrophe machine" class="thumbnail" src="/images/thumbnails/catastrophe.png" />
+            </a>
+            <a href="{% post_url 2019-01-09-treasure-hunting %}">
+                <img alt="Treasure hunting" class="thumbnail" src="/images/thumbnails/treasure.png" />
+            </a>
+
+            <a href="{% post_url 2019-01-11-voronoi-bookmarklet %}">
+                <img alt="Voronoizer Bookmarklet" class="thumbnail" src="/images/thumbnails/voronoize-bookmarklet.png" />
+            </a>
+
+            <a href="{% post_url 2018-12-19-hypocycloids %}">
+                <img alt="Hypocycloids" class="thumbnail" src="/images/thumbnails/hypocycloids.png" />
+            </a>
+
+            <a href="{% post_url 2019-06-21-least-squares-springs %}">
+                <img alt="Least squares as springs" class="thumbnail" src="/images/thumbnails/springs.png" />
+            </a>
+
+            <a href="{% post_url 2018-12-18-cats-on-ladders %}">
+                <img alt="Cats on Ladders" class="thumbnail" src="/images/thumbnails/cats.png" />
+            </a>
+
+            <a href="{% post_url 2018-10-28-convex-hull-circles %}">
+                <img alt="A bound due to Elekes" class="thumbnail" src="/images/thumbnails/elekes.png" />
+            </a>
+            <a href="{% post_url 2019-01-26-cylinder-ellipse %}">
+                <img alt="Cross-section of a cylinder" class="thumbnail" src="/images/thumbnails/cylinder.png" />
+            </a>
+            <a href="{% post_url 2018-01-22-usecode-search %}">
+                <img alt="Use code t-sne" class="thumbnail" src="/images/thumbnails/usecode-tsne.png" />
+            </a>
+            <a href="{% post_url 2019-01-24-whitneys-umbrella %}">
+                <img alt="Use code t-sne" class="thumbnail" src="/images/thumbnails/umbrella.png" />
+            </a>
+        </div>
+    </div>
+
+<div id='updates' class="vertical-section">
+          <div class="sectitle">Updates</div>
           <ul>
-              <li> <b>(September, 2021)</b> I gave the September 22nd APPM graduate student seminar (which <a href="https://www.colorado.edu/amath/sage-shaw">Sage Shaw</a>, <a href="https://www.colorado.edu/amath/daniel-messenger">Dan Messenger</a>, and I created this semester!) on "The fun and joy of static word embeddings". <a href="https://drive.google.com/file/d/1AyD1cXYJnOeCfpAQpubxXCjvPgs_Z2o3/view?usp=sharing">Slides</a>.</li>
+              <li> <b>(September, 2021)</b>
+                  <a href="https://www.colorado.edu/amath/sage-shaw">Sage Shaw</a>, <a href="https://www.colorado.edu/amath/daniel-messenger">Dan Messenger</a>, and I launched a graduate seminar for the Applied Math department.
+                  I gave the September 22nd talk on "The fun and joy of static word embeddings". <a href="https://drive.google.com/file/d/1AyD1cXYJnOeCfpAQpubxXCjvPgs_Z2o3/view?usp=sharing">Slides</a>.</li>
               <li> <b>(July, 2021)</b> Gave a talk at IC2S2 on recent work on the role of graduate and postdoctoral labor in driving faculty productivity.</li>
               <li> <b>(May, 2021)</b> Excited to be a research intern this summer at Microsoft Research NYC with <a href="http://jakehofman.com/">Jake Hofman</a> and <a href="http://dangoldstein.com/">Dan Goldstein</a> in the <a href="https://www.microsoft.com/en-us/research/theme/computational-social-science/">Computational Social Science group</a>.</li>
               <li> <b>(January, 2021)</b> I have successfully completed my PhD program's preliminary exam requirements (in probability/statistics, analysis, and numerics).</li>
@@ -102,28 +115,7 @@ redirect_from: "/html/about/"
               <li><b>(March, 2020)</b> I gave the March 3rd topology seminar talk on discrete Morse theory. <a href="https://drive.google.com/file/d/1ZUwHWCPdGhDiFiWNO29WhWjZ7Vc-2OCJ/view?usp=sharing">Slides</a>.
               </li>
           </ul>
-          </div>
-      </li>
-
-      <li>
-        <div class="collapsible-header nametitle">Blog posts</div>
-        <div class="collapsible-body">
-            <ul>
-            {% for post in site.posts %}
-
-            <li class="row">
-                <span class="date">({{ post.date | date: "%B, %Y" }})</span>
-                <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-
-
-            {% endfor %}
-
-            
-        </ul>
-        </div>
-      </li>
-    </ul>
 </div>
+
 
 </div>

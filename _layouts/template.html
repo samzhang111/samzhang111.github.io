@@ -6,15 +6,16 @@
 <body>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" href="/css/katex-0.12.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script defer src="/scripts/katex-0.12.min.js"></script>
-<script defer src="/scripts/katex-auto-render-0.12.min.js" ></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script>
-// from https://github.com/stevenkaras/stevenkaras.github.com/blob/master/_includes/js/katex.js
-// via https://karas.io/blog/math-support-with-katex-on-github-pages/
 document.addEventListener("DOMContentLoaded", function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {edge: 'left'});
     M.AutoInit();
 
     renderMathInElement(document.body, {'delimiters' : [
@@ -24,11 +25,34 @@ document.addEventListener("DOMContentLoaded", function() {
         {left: "\\(", right: "\\)", display: false}
     ]});
 
+    // from https://github.com/stevenkaras/stevenkaras.github.com/blob/master/_includes/js/katex.js
+    // via https://karas.io/blog/math-support-with-katex-on-github-pages/
     document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el) {
         el.outerHTML = katex.renderToString(el.textContent.replace(/%.*/g, ''), { displayMode: true });
     });
 });
 </script>
+
+<nav id="top" class="light-blue darken-4">
+    <div class="nav-margins nav-wrapper">
+        <a href="/" class="brand-logo left">sam.zhang.fyi</a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/html/about">About</a></li>
+        <li><a href="/index.html#visualizations">Visualizations</a></li>
+        <li><a href="/index.html#updates">Updates</a></li>
+        <li><a href="/html/blog">Blog</a></li>
+      </ul>
+    </div>
+</nav>
+
+  <ul class="sidenav" id="nav-mobile">
+    <li><a href="/html/about">About</a></li>
+    <li><a href="/index.html#visualizations">Visualizations</a></li>
+    <li><a href="/index.html#updates">Updates</a></li>
+    <li><a href="/html/blog">Blog</a></li>
+  </ul>
 
   {{ content }}
 

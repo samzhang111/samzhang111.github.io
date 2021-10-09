@@ -11,44 +11,22 @@ html {
     background-color: #f3f1ee;
 }
 
-h1, h2, h3, .nametitle, .homelink, .title, .postdate {
+h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
     font-family: 'Roboto Slab';
 }
 
-.nametitle {
-    font-size: 1.3em;
-}
+.nav-margins {
 
-#images {
-    float: right;
-    margin: 0.5em;
-    img {
-        width: min(320px, 90%);
-        display: block;
-    }
-}
-
-@media (max-width: 480px) {
-    .intro {
-        clear: both;
-    }
-
-    #images {
-        float: none;
-    }
-}
-
-.container {
-    @media (min-width: 1025px) {
-        max-width: 1025px !important;
+    @media (min-width: 992px) {
+        max-width: 70vw;
+        margin: 0 auto;
     }
 }
 
 .site {
     font-family: 'Roboto';
-    margin: 3em auto !important;
+    margin: 3em auto 2em !important;
     font-size: 18px;
-
 
     ul {
         //list-style-type: none;
@@ -61,6 +39,48 @@ h1, h2, h3, .nametitle, .homelink, .title, .postdate {
   .collapsible-header {
       background-color: #f3f1ee;
   }
+}
+
+.nametitle {
+    font-size: 1.7em;
+    margin: 1em 0;
+}
+
+.sectitle {
+    font-size: 1.3em;
+    margin: 1.5em 0 1em;
+}
+
+#intro-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+
+    #images {
+        flex: 1 0 20%;
+        min-width: 15em;
+        margin-top: 1em;
+        * {
+            margin: 0 auto;
+            text-align: center;
+        }
+        img {
+            width: min(15em, 90%);
+            display: block;
+        }
+    }
+
+    .intro {
+        flex: 1 0 70%;
+        min-width: 70%;
+    }
+}
+
+
+.container {
+    @media (min-width: 1025px) {
+        max-width: 1025px !important;
+    }
 }
 
 .homelink {
@@ -110,5 +130,16 @@ h1, h2, h3, .nametitle, .homelink, .title, .postdate {
 .gallery {
     .thumbnail {
         width: 120px;
+        height: 120px;
+        border: solid 3px;
     }
+}
+
+.featured {
+    width: 100%;
+    border: solid 3px;
+}
+
+#tail {
+    text-align: right;
 }

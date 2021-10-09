@@ -20,9 +20,9 @@ Move the center of mass to the center-top of the parabola, within the dotted cus
 
 Note that in the visualization, the line representing the _ground_ moves when the center of mass moves, rather than the parabola itself. I only drew the point corresponding to the global minimum - perhaps it would have been more accurate to include both. Also note that the right hand figure is interactive.
 
-<div style="display: flex; width: 600px; margin: 3px auto; justify-content:space-between">
-<div id="control" style="flex:0 1 auto;width:280px;height:300px;border: 3px solid black"></div>
-<div id="catastrophe-surface" style="flex:0 1 auto;width:280px;height:300px;border: none;"></div>
+<div style="display: flex; flex-wrap: wrap; width: 100%; margin: 3px auto; justify-content:space-between; border: 3px solid black; border-radius: 10px; overflow: hidden">
+<div id="catastrophe-control" style="flex:1 0 auto; width: 20em; height: 30em; border-right: 3px solid black"></div>
+<div id="catastrophe-surface" style="flex:1 0 auto; width: 20em; height: 30em; border: none;"></div>
 </div>
 
 [Full screen version](/html/fullscreen/catastrophe). 
