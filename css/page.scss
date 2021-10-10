@@ -42,19 +42,22 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
 }
 
 .nametitle {
-    font-size: 1.7em;
-    margin: 1em 0;
+    font-size: 1.9em;
 }
 
 .sectitle {
-    font-size: 1.3em;
-    margin: 1.5em 0 1em;
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
 }
 
 #intro-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap-reverse;
+
+    &.wrap-not-reverse {
+        flex-wrap: wrap;
+    }
 
     #images {
         flex: 1 0 20%;
