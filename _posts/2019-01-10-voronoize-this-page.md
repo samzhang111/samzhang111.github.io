@@ -5,6 +5,7 @@ description: This page has a Voronoi diagram drawn over it, with link and input 
 thumbnail: voronoize.png
 date: 2019-01-10 12:00:00
 tag: weird
+source: https://github.com/samzhang111/html-voronoi
 scripts:
     - "/scripts/voronoi-bundle.js"
 ---

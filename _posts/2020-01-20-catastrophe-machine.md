@@ -13,6 +13,7 @@ scripts:
 styles:
     - "/css/jsxgraph-0.99.7.css"
     - "/css/mathbox.css"
+source: https://github.com/samzhang111/catastrophe-machine
 ---
 
 [Catastrophe theory](https://en.wikipedia.org/wiki/Catastrophe_theory) was a popular branch of mathematics concerned with qualitative characterizations of ways that singularities relate to potential energy functions. The name "catastrophe theory" comes from how a continuous change in a parameter of a potential function can introduce a _discontinuous_ jump in observed phenomena, and this can be catastrophic in certain cases, like with a buckling beam. I say the field "was" popular, rather than "is", because it was a classic example of a field of applied mathematics that was overhyped, applied too widely without adequate attention toward scientific fundamentals, and the backlash all but killed it. However, there is some talk about it recently becoming popular again for chemical applications. (Hence why this blog post!)
