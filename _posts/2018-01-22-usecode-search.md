@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a municipal land use code search engine using a graph of word embeddings
-description: A technical blog post about a successful approach using the geometry of language to help permit-seekers search through municipal land use codes.
+description: Using the geometry of language to help permit-seekers find the right municipal land use codes.
 date: 2018-01-22 12:10:00
 tag: language
 thumbnail: usecode-tsne.png

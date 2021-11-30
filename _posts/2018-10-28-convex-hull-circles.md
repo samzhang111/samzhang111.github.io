@@ -3,7 +3,7 @@ layout: post
 title: A visualization of a geometric bound on convex hulls
 date: 2018-10-28 12:00:00
 tag: geometry
-description: Interact with a lemma that bounds the size of a convex hull of points based off circles centered at those points.
+description: A lemma that bounds the size of a convex hull of points based off circles centered at those points.
 thumbnail: elekes.png
 source: https://github.com/samzhang111/convexhullcircles
 scripts:
