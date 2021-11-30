@@ -3,10 +3,13 @@ layout: post
 title: An ascii implicit function plotter
 date: 2018-12-26 12:00:00
 tag: weird
+description: Plot an elliptic curve (or any implicit function) using ASCII art!
+thumbnail: asciiplot.png
 scripts:
     - "/scripts/mathjs-5.4.0-min.js"
     - "/scripts/lodash-4.17.11-min.js"
     - "/scripts/asciiplot2.js"
+source: https://github.com/samzhang111/marchingcubes-ascii
 ---
 
 

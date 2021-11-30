@@ -3,11 +3,14 @@ layout: post
 title: Treasure hunting
 date: 2019-01-09 12:00:00
 tag: geometry
+description: You have been given flawed instructions for finding treasure on an island, but geometry may be able to help.
+thumbnail: treasure.png
 scripts:
     - "/scripts/jsxgraphcore-0.99.7.js"
     - "/scripts/treasure.js"
 styles:
     - "/css/jsxgraph-0.99.7.css"
+source: https://github.com/samzhang111/linesandcurves
 ---
 
 You are given instructions for finding treasure on an island. The island has two trees and a "gallows". To find the treasure, we first mark out two special points, $P$ and $Q$. To find $P$, start at the gallows, walk toward Tree 1, then make a right-angled left turn upon reaching the tree. Walk the same distance again: you have found $P$. To find $Q$, go back to the gallows, walk toward Tree 2, then turn _right_ at a right-angle, and walk the same distance. Mark the spot you are standing on as $Q$. (It may make more sense looking at the diagram below).

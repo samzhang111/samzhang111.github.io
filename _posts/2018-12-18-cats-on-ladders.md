@@ -3,6 +3,9 @@ layout: post
 title: Cats on ladders
 date: 2018-12-18 12:00:00
 tag: geometry
+description: Test your geometric intuition with the following problem. A cat is sitting on a ladder leaning against the wall, and the ladder slips. What shape does the cat draw through the air?
+thumbnail: cats.png
+source: https://github.com/samzhang111/linesandcurves
 scripts:
     - "https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"
     - "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"

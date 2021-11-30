@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Voronoize this page!
+description: This page has a Voronoi diagram drawn over it, with link and input HTML elements as points.
+thumbnail: voronoize.png
 date: 2019-01-10 12:00:00
 tag: weird
 scripts:

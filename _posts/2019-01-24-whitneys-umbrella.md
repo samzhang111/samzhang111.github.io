@@ -3,6 +3,9 @@ layout: post
 title: Whitney's Umbrella
 date: 2019-01-24 12:00:00
 tag: geometry
+description: First steps in visualizing 3d mathematics using javascript. A famous surface with a cuspidal point.
+thumbnail: umbrella.png
+fullscreen: /html/fullscreen/umbrella.html
 scripts:
     - "/scripts/mathbox-bundle.min.js"
     - "/scripts/umbrella.js"

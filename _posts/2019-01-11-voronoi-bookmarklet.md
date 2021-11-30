@@ -2,7 +2,9 @@
 layout: post
 title: Voronoizer bookmarklet
 date: 2019-01-11 12:00:00
-tag: weird
+description: Draw a Voronoi diagram over any webpage with this bookmarklet.
+thumbnail: voronoize-bookmarklet.png
+source: https://github.com/samzhang111/html-voronoi
 ---
 
 As promised in my previous post on the ["voronoizer"]({% post_url 2019-01-10-voronoize-this-page %}), I have made the voronoizer into a bookmarklet that you can run on any page whose Content Security Policy permits.

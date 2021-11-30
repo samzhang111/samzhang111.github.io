@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Linear regression, the old fashioned way
+description: Perform ordinary least squares through a set of points with nails, springs, sleeves, and a frictionless rod.
+thumbnail: springs.png
+fullscreen: /html/fullscreen/springs/index.html
 date: 2019-06-21 12:00:00
 tag: geometry
 ---

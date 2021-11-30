@@ -6,12 +6,19 @@
 
 $background: #F7F7FF;
 $black: #131112;
+$highlight: #ffffdd;
 
 html {
     font-family: 'Roboto';
     font-size: 18px;
     color: $black;
     background-color: $background;
+}
+
+nav#top {
+    li > a {
+        font-size: 18px;
+    }
 }
 
 a:hover {
@@ -56,6 +63,12 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
     font-size: 1.5em;
     margin: 1em 0 0.5em;
 }
+
+.projtitle {
+    font-size: 1.2em;
+    margin: 1em 0 0.5em;
+}
+
 
 #intro-container {
     display: flex;
@@ -137,12 +150,10 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
   margin-right: 1rem;
 }
 
-.gallery {
-    .thumbnail {
-        width: 120px;
-        height: 120px;
-        border: solid 3px;
-    }
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    border: solid 3px;
 }
 
 .featured {
@@ -151,5 +162,42 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
 }
 
 #tail {
+    font-size: 18px;
+    margin: 0 5em 3em 0;
     text-align: right;
+}
+
+.project-summary {
+    display: flex;
+
+    .project-summary-thumbnail {
+        display: inline-block;
+        margin-right: 1em;
+        flex: 0 1 auto;
+    }
+
+    .project-summary-text {
+        flex: 0 1 auto;
+    }
+
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+    margin: 1em 0;
+}
+
+.paper {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+    .paper-title {
+        font-weight: bold;
+    }
+
+    .paper-authors {
+        font-style: italic;
+    }
+
+    .paper-journal {
+        background-color: $highlight;
+    }
 }

@@ -2,6 +2,9 @@
 layout: post
 title: The cross-section of a cylinder is an ellipse
 date: 2019-01-26 12:00:00
+description: A classic proof that the cross-section of a cylinder is an ellipse. I have no idea why, but this is the most popular blog post on my website.
+thumbnail: cylinder.png
+fullscreen: /html/fullscreen/cylinder.html
 tag: geometry
 scripts:
     - "/scripts/mathbox-bundle.min.js"

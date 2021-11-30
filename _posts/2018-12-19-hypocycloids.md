@@ -3,6 +3,9 @@ layout: post
 title: Hypocycloids
 date: 2018-12-19 12:00:00
 tag: geometry
+description: What happens if you rotate a smaller circle inside of a larger circle?
+thumbnail: hypocycloids.png
+source: https://github.com/samzhang111/linesandcurves
 scripts:
     - "/scripts/jsxgraphcore-0.99.7.js"
     - "/scripts/copernicus.js"

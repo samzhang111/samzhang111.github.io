@@ -3,6 +3,9 @@ layout: post
 title: A catastrophe machine
 date: 2020-01-20 12:00:00
 tag: geometry
+description: Move the center of gravity of a wedge balancing on a table, and observe its corresponding catastrophe surface.
+thumbnail: catastrophe.png
+fullscreen: /html/fullscreen/catastrophe.html
 scripts:
     - "/scripts/mathbox-bundle.min.js"
     - "/scripts/jsxgraphcore-0.99.7.js"

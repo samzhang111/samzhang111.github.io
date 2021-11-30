@@ -3,6 +3,9 @@ layout: post
 title: Curve shortening
 date: 2020-10-29 01:44:00
 tag: geometry
+description: Deform a curve with a discrete curve shortening flow.
+thumbnail: shortening.png
+fullscreen: /html/fullscreen/curve-shortening.html
 scripts:
     - "/scripts/mathbox-bundle.min.js"
     - "/scripts/jsxgraphcore-0.99.7.js"
@@ -11,6 +14,7 @@ scripts:
 styles:
     - "/css/jsxgraph-0.99.7.css"
     - "/css/mathbox.css"
+source: https://github.com/samzhang111/curve-shortening
 ---
 
 
