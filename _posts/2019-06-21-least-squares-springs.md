@@ -6,6 +6,7 @@ thumbnail: springs.png
 fullscreen: /html/fullscreen/springs/index.html
 date: 2019-06-21 12:00:00
 tag: geometry
+source: https://github.com/samzhang111/least-squares-springs
 ---
 
 Suppose you want to fit an ordinary least squares model to a set of points in $\mathbb{R}^2$, but you zoned out during statistics class and now you're stuck on a desert island. In fact, all you have are a wooden board, a hammer, a bunch of nails, some good old zero-length springs, frictionless cloth loops, and a frictionless rod.

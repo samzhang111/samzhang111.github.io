@@ -4,6 +4,7 @@ title: A moduli space for triangles
 description: A solution to a problem by Lewis Carroll using a clever moduli space. For fun, pick points on the moduli space, and watch triangles deform between them along geodesics.
 thumbnail: moduli-triangles.png
 fullscreen: /html/fullscreen/triangles-moduli.html
+source: https://github.com/samzhang111/triangles-moduli
 date: 2019-02-12 12:00:00
 tag: geometry
 scripts:
