@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+        <link rel="stylesheet" type="text/css" href="/css/mathbox.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="leftcol">
+                <div id="title">Elliptic curves and traveling wave solutions to the KdV equation</div>
+                <div id="description">
+                    What do <a href="https://en.wikipedia.org/wiki/Elliptic_curve" target="_blank">elliptic curves</a> have to do with waves on shallow water surfaces?
+                    It is a surprising and beautiful fact of mathematics that they are deeply related. Points on elliptic curves correspond with <em>traveling wave solutions</em> of <a href="https://en.wikipedia.org/wiki/Korteweg%E2%80%93De_Vries_equation" target="_blank">the KdV equation</a>, a nonlinear PDE that serves as a model of waves on shallow water surfaces.
+                    <p>
+                    Pick an elliptic curve using the interactive graph below. The inset graph shows the corresponding elliptic curve, while the animation shows the KdV solution associated with the curve (with ω=-i𝜋/2).
+                    The point is initialized at a=4/3, b=-8/27, which coincides with the <a href="https://en.wikipedia.org/wiki/Soliton">1-soliton</a> solution.</div>
+                <div id="controls" class="jxgbox"></div>
+            </div>
+
+            <div id="rightcol">
+                <div id="kdv"></div>
+                <div id="curve" class="jxgbox"></div>
+            </div>
+        </div>
+
+        
+            <script src="main.js"></script>
+        
+        <script src="/scripts/paulmasson.math.js" type="text/javascript"></script>
+        <script src="/scripts/mathbox-bundle.min.js" type="text/javascript"></script>
+        <script data-goatcounter="https://samzhang.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    </body>
+    
+</html>
