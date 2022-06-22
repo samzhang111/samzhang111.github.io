@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div id="projects" class="vertical-section">
+    <div class="sectitle">Visualizations</div>
+
+    {% for post in site.posts %}
+        {% capture main_url %}
+            {% if post.mainurl %}
+                {{ post.mainurl }}
+            {% else %}
+                {{ post.url }}
+            {% endif %}
+        {% endcapture %}
+
+        <div class="project-summary">
+            <div class="project-summary-thumbnail">
+                <a href="{{ main_url }}" target="_blank"><img class="thumbnail" src="/images/thumbnails/{{ post.thumbnail }}" /></a>
+            </div>
+            <div class="project-summary-text">
+                <span class="projtitle"><a href="{{ main_url }}" target="_blank">{{ post.title }}</a></span>
+                <div class="description">{{ post.description }}</div>
+                {% if post.papers %}
+                    <div class="papers">
+                        {% for paper in post.papers %}
+                        <div class="paper">
+                            <div class="paper-title">{{ paper.title }}</div>
+                            <span class="paper-authors"> {{ paper.authors }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="paper-journal"> {{ paper.journal }}, {{ paper.year }}</span>
+                            <span class="paper-link"> <a href="{{ paper.link }}" target="_blank">[paper]</a></span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <div class="urls">
+                    <a href="{{ main_url }}" target="_blank">[link]</a> 
+                    {% if post.links %}
+                        {% for link in post.links %}
+                        <a href="{{link}}" target="_blank">[link]</a>
+                        {% endfor %}
+                    {% endif %}
+                    {% if post.fullscreen %}
+                    <a href="{{post.fullscreen}}" target="_blank">[fullscreen]</a>
+                    {% endif %}
+                    {% if post.source %}
+                    <a href="{{post.source}}" target="_blank">[source]</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
