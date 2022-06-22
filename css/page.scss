@@ -4,18 +4,29 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-$background: #F7F7FF;
+$background: #FAF4F0;
 $black: #131112;
 $highlight: #ffffdd;
+$link-color: #E55934;
 
 html {
     font-family: 'Roboto';
     font-size: 18px;
     color: $black;
     background-color: $background;
+
+    a {
+        color: $link-color;
+    }
 }
 
-nav#top {
+
+#top {
+    background-color: $background;
+    a {
+        color: $link-color;
+    }
+
     li > a {
         font-size: 18px;
     }
@@ -153,7 +164,7 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
 .thumbnail {
     width: 120px;
     height: 120px;
-    border: solid 3px;
+    border: solid 1.5px;
 }
 
 .featured {
