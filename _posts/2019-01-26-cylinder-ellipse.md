@@ -13,13 +13,13 @@ styles:
     - "/css/mathbox.css"
 ---
 
-Here's an interactive WebGL-ification of the visual diagram that goes along with the proof of the elementary fact that the cross-section of a cylinder is an ellipse:
+Here's an interactive visual diagram to accompany the proof of the elementary fact that the cross-section of a cylinder is an ellipse:
 
 <div id="cylinder" style="width:600px;height:600px;margin-right:auto"></div>
 
 [Full screen version](/html/fullscreen/cylinder). 
 
-I was inspired to make this when I saw the diagram below in [Geometry and the Imagination](https://www.maa.org/press/maa-reviews/geometry-and-the-imagination).
+I was inspired to make this when I saw this illustration in [Geometry and the Imagination](https://www.maa.org/press/maa-reviews/geometry-and-the-imagination).
 
 <img src="/images/hilbert-cylinder.png" align='right'/>
 

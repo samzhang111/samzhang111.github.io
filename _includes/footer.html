@@ -1,26 +1,5 @@
-    <div class="vertical-section"><h2>More posts</h2>
-        <ul>
-            {% for post in site.posts %}
-        {% capture postyear %} {{ post.date | date: '%Y' }} {% endcapture %}
-        {% assign postyear = postyear | plus: 0 %}
-
-        {% if postyear > 2016 %}
-	    <li class="row">
-		    <span class="date">{{ post.date | date_to_string }}</span>
-		    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-
-        {% endif %}
-
-            {% endfor %}
-        </ul>
-    </div>
-
 	<div content>
 
-        <a href="/">Sam Zhang</a>'s homepage.
+        <a href="/">Back to homepage</a>
 
-        <p>
-
-        You can try to read this through an Atom-compatible feed reader, but the posts often rely on embedded HTML and Javascript. For the adventurous, here is the <a href="/feed.xml">feed.xml</a>.
 	</div>
