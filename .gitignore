@@ -5,3 +5,5 @@ _site
 _gh-pages
 css/screen.css
 _drafts
+.bundle
+vendor
