@@ -255,7 +255,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  addressable
   github-pages
   jekyll-sitemap
 
