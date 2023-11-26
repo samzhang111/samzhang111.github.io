@@ -212,3 +212,13 @@ h1, h2, h3, .nametitle, .sectitle, .homelink, .title, .postdate {
         background-color: $highlight;
     }
 }
+
+.bibliography li {
+    display: list-item;
+}
+
+/* Hide non-selected publications */
+.bibliography li:not(.selected) {
+    display: none;
+}
+

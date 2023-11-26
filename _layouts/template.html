@@ -30,6 +30,29 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el) {
         el.outerHTML = katex.renderToString(el.textContent.replace(/%.*/g, ''), { displayMode: true });
     });
+
+    document.getElementById('toggleLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get all non-selected publications
+        var nonSelectedPublications = document.querySelectorAll('.bibliography li:not(.selected)');
+
+        // Check if the first non-selected publication is currently displayed
+        if (nonSelectedPublications[0].style.display === 'list-item') {
+            // Currently showing all publications, so hide non-selected ones
+            nonSelectedPublications.forEach(function(el) {
+                el.style.display = 'none';
+            });
+            this.textContent = '[+] Show more publications'; // Update link text
+        } else {
+            // Currently showing only selected publications, so show non-selected ones
+            nonSelectedPublications.forEach(function(el) {
+                el.style.display = 'list-item';
+            });
+            this.textContent = '[-] Show fewer publications'; // Update link text
+        }
+    });
+
 });
 </script>
 
