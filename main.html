@@ -202,9 +202,9 @@ Attended a science of science workshop at SFI, and participated in the SFI Compl
     {% for post in site.posts %}
         {% capture main_url %}
             {% if post.mainurl %}
-                {{ post.mainurl }}
+                {{ post.mainurl | absolute_url }}
             {% else %}
-                {{ post.url }}
+                {{ post.url | absolute_url }}
             {% endif %}
         {% endcapture %}
 
