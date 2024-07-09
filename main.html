@@ -201,6 +201,10 @@ Attended a science of science workshop at SFI, and participated in the SFI Compl
     </div>
 
     {% for post in site.posts %}
+        {% if post.tag == 'nora' %}
+            {% continue %}
+        {% endif %}
+
         {% capture main_url %}
             {% if post.mainurl %}
                 {{ post.mainurl | absolute_url }}
