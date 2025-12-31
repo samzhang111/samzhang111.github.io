@@ -1,0 +1,11 @@
+There's a lot of talk about how AI can be more powerful used in conjunction with people, rather than instead of people. What does that actually mean in practice? Here are some ways that I've found to use AI that actually improved my life.
+
+# Introspection
+
+LLMs are good at tip-of-the-tongue queries, since they are good at filling holes or slightly expanding the frontiers of our awareness and knowledge. Aren’t our own “unknown unknowns” a bit like that? That is what led me to come up with the following prompt on new years eve of 2025. I have to admit I cried when I finished having this structured conversation with GPT 5.2. A profound exercise.
+
+> Unknown unknowns. We have many in our life. Things we are missing out on that we wouldn’t even know that we would enjoy. Blind spots in how we interact with others. Beliefs that we hold that are limiting us, especially ones that protect something important. Ask me some questions that force trade-offs or discomfort, interact with my responses by soliciting one more round of sharper questions, and then use that to diagnose patterns, blind spots, and possible directions to explore or improve my life.
+
+# Labor organizing
+
+In Colorado, CWA 7799 helped pass an Unfair Labor Practices bill that extended various workplace protections to public sector workers. These Unfair Labor Practices could then be reported to the state, but the reporting process involved filling out a confusing form that required identifying the specific section of the law that was violated. I created a custom GPT (way back in ancient history, 2023) that helped fill out these forms for the user. Available here: https://chatgpt.com/g/g-9KuOMurzV-unfair-labor-practices-complaint-assistant
